@@ -1,5 +1,5 @@
 # Style Guider Demo
-
+[![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Code Climate][codeclimate-image]][codeclimate-url]
 > [View the demo](https://webdevian.github.io/style-guider-demo/)
 
 A web framework and style guide built with [Style Guider](https://www.npmjs.com/package/generator-style-guider)
@@ -50,3 +50,11 @@ There are pre-commit and pre-push hooks for linting, and building the minified f
 ## Incorporating this framework in other projects
 
 This project also acts as a web framework, with re-usable SCSS mixins, pug mixins and front-end javascript that can be included in other projects. Just add it as an npm dependency so it is stored in `node_modules` then the mixin endpoints (or minified dist files) will be available to your project code. 
+
+
+[travis-image]: https://travis-ci.org/webdevian/style-guider-demo.svg?branch=master
+[travis-url]: https://travis-ci.org/webdevian/style-guider-demo
+[daviddm-image]: https://david-dm.org/webdevian/style-guider-demo.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/webdevian/style-guider-demo
+[codeclimate-image]: https://codeclimate.com/github/webdevian/style-guider-demo/badges/gpa.svg
+[codeclimate-url]: https://codeclimate.com/github/webdevian/style-guider-demo
