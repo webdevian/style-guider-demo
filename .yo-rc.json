@@ -1,0 +1,15 @@
+{
+  "generator-style-guider": {
+    "promptValues": {
+      "name": "style-guider-demo",
+      "depManager": "npm",
+      "husky": true
+    },
+    "name": "style-guider-demo",
+    "depManager": "npm",
+    "husky": true,
+    "longName": "style-guider-demo",
+    "yarn": false,
+    "npm": true
+  }
+}

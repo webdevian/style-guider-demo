@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+// ---------------------------
+// Import variables and mixins
+// ---------------------------
+
+@import 'settings';
+@import 'foundation';
+@import 'mixins';
+
+// ---------------------
+// Components
+// ---------------------
+
+@import 'components/example';
+
+//------ yeoman import hook ------ //
+//- NB! The above line is required for our yeoman generator and should not be changed.
+
+// ------------------------------------
+// Optional mixin to include everything
+// from the style-guider-demo brand framework
+// ------------------------------------
+
+@mixin style-guider-demo-everything {
+
+  // Components - Optional
+  @include style-guider-demo-example;
+
+  //------ yeoman include hook ------ //
+  //- NB! The above line is required for our yeoman generator and should not be changed.
+}
