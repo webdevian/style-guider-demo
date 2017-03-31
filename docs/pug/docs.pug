@@ -17,7 +17,7 @@ html.no-js(lang='en')
           H.className = H.className.replace(/\bno-js\b/, 'js');
         })(document.documentElement);
 
-    link(rel='stylesheet', href='docs/css/docs.css?=' + cachebuster)
+    link(rel='stylesheet', href='docs/css/docs.css')
     script.
       var components = !{JSON.stringify(components)}
   body
@@ -88,7 +88,7 @@ html.no-js(lang='en')
 
     script(src='docs/js/jquery.js')
     script(src='docs/js/jquery-ui.js')
-    script(src='docs/js/scripts.js?=' + cachebuster)
+    script(src='docs/js/scripts.js')
 
     script(src='docs/js/pug.js')
     script(src='docs/js/highlight.min.js')
