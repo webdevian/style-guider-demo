@@ -1,0 +1,6 @@
+mixin hero(src, alt, slim, outline)
+  - var classes = ''
+  - classes = classes + (slim ? 'slim ' : '')
+  - classes = classes + (outline ? 'outline' : '')
+  .hero(class=classes)&attributes(attributes)
+    img(src=src, alt=alt)

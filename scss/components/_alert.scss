@@ -1,0 +1,107 @@
+@mixin style-guider-demo-alert {
+
+  .message {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: rem-calc(8 16);
+    border-bottom: 1px solid $white;
+    background-color: $medium-gray;
+    color: $white;
+
+
+    &.alert {
+      background-color: $red;
+    }
+
+    &.warning {
+      background-color: $warning-color;
+      color: $black;
+
+      a,
+      a:hover,
+      a:focus {
+        color: $black;
+      }
+    }
+
+    > *:first-child {
+      @include grid-row();
+      position: relative;
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    // Padding for the close link
+    &.has-close > *:first-child {
+      padding-right: rem-calc(70);
+    }
+
+    .close {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+
+      &::before {
+        content: '× ';
+      }
+    }
+
+    a,
+    a:hover,
+    a:focus {
+      color: $white;
+      font-weight: bold;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+  }
+
+  @include foundation-callout;
+
+  .callout {
+    max-width: rem-calc(700);
+
+    &.alert,
+    &.warning {
+      a {
+        font-weight: bold;
+      }
+    }
+
+    &.alert a {
+      color: scale-color($red, $lightness: -15%);
+    }
+
+    h5 {
+      color: $body-font-color;
+      font-weight: bold;
+    }
+  }
+
+  // No JS specific alert
+
+  noscript .alert {
+    text-align: center;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  // No JS support
+  // No point showing a close button if it won't work
+
+  .no-js {
+    .message .close {
+      display: none;
+    }
+  }
+}

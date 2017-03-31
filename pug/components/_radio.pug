@@ -1,0 +1,16 @@
+mixin radio(name, selectedValue, id, legend, helperBelow, helperAbove, options, stack, error)
+  div(class=error ? 'has-error' : '', role='radiogroup')&attributes(attributes)
+    legend(for=id)= legend
+    if helperAbove
+      span= helperAbove
+    fieldset(class=stack ? 'stack-list' : null)
+      each option in options
+        - var isChecked = ('' + option.value) === ('' + selectedValue) ? true : false
+        div
+          input(type='radio', id=id + '-' + option.value, value=option.value, name=name, checked=isChecked)
+          label(for=id + '-' + option.value)= option.label
+    if helperBelow
+      span= helperBelow
+    block
+    if error
+      span.error-message= error

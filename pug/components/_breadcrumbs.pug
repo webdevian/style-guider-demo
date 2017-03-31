@@ -1,0 +1,10 @@
+mixin breadcrumbs(items)
+  ul.breadcrumbs&attributes(attributes)
+    if items
+      each item in items
+        if item.link
+          li
+            a(href=item.link)= item.label
+
+        else
+          li= item.label

@@ -1,0 +1,42 @@
+@mixin style-guider-demo-accessibility {
+  // Elements that we want to be visible on screen-readers only
+  .show-for-sr,
+  .show-on-focus {
+    @include element-invisible;
+  }
+}
+
+a:focus {
+  transition: text-shadow .2s ease-in;
+  outline-offset: 1px;
+  text-shadow: $gray-shadow 0 0 2px;
+}
+
+[type='checkbox']:focus,
+[type='radio']:focus {
+  + label {
+    text-decoration: underline;
+  }
+}
+
+.skip-to-content a {
+  position: absolute;
+  top: rem-calc(-46);
+  left: 0;
+  padding: rem-calc(6 10);
+  transition: top 1s ease-out;
+  border-right: 1px solid $white;
+  border-bottom: 1px solid $white;
+  background: $red;
+  color: $white;
+  font-size: rem-calc(12);
+  z-index: 100;
+}
+
+.skip-to-content a:focus {
+  top: 0;
+  transition: top .1s ease-in;
+  outline: 0;
+  color: $white;
+  text-decoration: underline;
+}

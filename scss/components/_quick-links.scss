@@ -1,0 +1,123 @@
+@mixin style-guider-demo-quick-links {
+  .quick {
+
+    border-top: $faint-border;
+    border-bottom: $faint-border;
+
+    ul {
+      @include grid-row();
+      @include grid-layout(5, 'li', $grid-column-gutter);
+      margin-bottom: rem-calc(16);
+      padding-top: rem-calc(16);
+      list-style: none;
+
+    }
+
+    a:hover,
+    a:focus {
+      outline-color: $red;
+      outline-offset: 3px;
+      outline-width: medium;
+      color: $red;
+      text-decoration: none;
+    }
+
+    // Different layouts depending on how many children
+    // Currently done with a class, but could
+    // be done more cleverly with css selectors
+    // http://stackoverflow.com/a/12198561/1868365
+
+    &.six ul {
+      @include grid-layout(6, 'li');
+    }
+
+    &.four ul {
+      @include grid-layout(4, 'li');
+    }
+
+    li {
+      padding-top: rem-calc(16);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: rem-calc(95);
+
+
+    }
+
+    @include breakpoint(small only) {
+      ul {
+        @include grid-layout(3, 'li');
+      }
+
+      &:not(.four, .six) li:nth-last-of-type(2) {
+        margin-left: percentage(1 / 6);
+      }
+
+      &.six ul {
+        @include grid-layout(3, 'li');
+      }
+
+      &.four ul {
+        @include grid-layout(2, 'li');
+      }
+    }
+
+    a {
+      display: block;
+      height: 0;
+      // Padding added to link to make icon clickable too
+      padding-bottom: rem-calc(130);
+      color: $dark-gray;
+      font-size: rem-calc(20);
+      font-weight: 300;
+      line-height: 1;
+      text-align: center;
+    }
+
+    @include breakpoint(medium) {
+      &.vertical {
+        border: 0;
+
+        ul {
+          @include grid-layout(1, 'li');
+          margin-bottom: 0;
+          padding-top: 0;
+        }
+
+        li {
+          padding: rem-calc(4 0);
+          background-position: left center;
+          background-size: rem-calc(80);
+        }
+
+        a {
+          height: auto;
+          padding: rem-calc(32 16 32 96);
+          text-align: left;
+        }
+
+      }
+    }
+
+  }
+
+  .tablet {
+    background-image: url(#{$img-path}red-tablet.png);
+  }
+
+  .van {
+    background-image: url(#{$img-path}red-van.png);
+  }
+
+  .map {
+    background-image: url(#{$img-path}red-map.png);
+  }
+
+  .box {
+    background-image: url(#{$img-path}red-box.png);
+  }
+
+  .laptop {
+    background-image: url(#{$img-path}red-laptop.png);
+  }
+}

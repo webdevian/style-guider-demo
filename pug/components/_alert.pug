@@ -1,0 +1,8 @@
+mixin alert(type, close)
+  - var classes = type
+  - classes = classes + (close ? ' has-close' : '')
+  section.message(class=classes, role='status')&attributes(attributes)
+    p
+      block
+      if close
+        a.close(tabindex=0, href='#') Close

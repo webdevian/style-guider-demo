@@ -1,0 +1,86 @@
+mixin pagination(pages, current, relativeNumber, absoluteNumber)
+  if pages.length
+    - var current = current * 1
+    - var total = pages.length || 0
+    - var relativeNumber = relativeNumber ? relativeNumber * 1 : 1
+    - var absoluteNumber = absoluteNumber ? absoluteNumber * 1 : 2
+    - var previous = current > 1 ? true : false
+    - var previousLink = previous && pages[current - 2] ? pages[current - 2].link : null
+    - var next = current < total ? true : false
+    - var nextLink = next ? pages[current].link : null
+    div
+      ul.pagination(role='navigation', aria-label='Pagination')&attributes(attributes)
+
+        //- Do some clever stuff to choose which links to display in here and what dividers to show in between
+        //- No links should repeat themselves :/
+
+        //- Fetch the x pages before current and put them in a separate array
+        - var before = []
+        each page, index in pages
+          if index > (current - 2 - relativeNumber) && index < (current - 1)
+            - before.push(page)
+
+        //- Fetch the x pages after current and put them in a separate array
+        - var after = []
+        each page, index in pages
+          if index < (current + relativeNumber) && index > (current - 1)
+            - after.push(page)
+
+        //- Get the first x pages and check they are not already in the before array (by inversing the same if statement), and are below the current page
+        - var start = []
+        each page, index in pages
+          if index < (current - 1) && index < absoluteNumber && !(index > (current - 2 - relativeNumber) && index < (current - 1))
+            - start.push(page)
+
+        //- Get the last x pages and check they are not already in the after array (by inversing the same if statement), and are above the current page
+        - var end = []
+        each page, index in pages
+          if index > (current - 1) && (index > (total - absoluteNumber - 1)) && !(index < (current + relativeNumber) && index > (current - 1))
+            - end.push(page)
+
+        //- Previous
+        if previous
+          li.pagination-previous
+            a(href=previousLink) Previous #[span.show-for-sr page]
+        else
+          li.pagination-previous.disabled Previous #[span.show-for-sr page]
+
+        //-- Start
+        each page in start
+          li
+            a(href=page.link, aria-label='Page ' + page.page)= page.page
+
+        //- Divider (if there is a gap between start and before)
+        if start[start.length - 1] && before[0] && start[start.length - 1].page + 2 < before[0].page + 1
+          li.ellipsis(aria-hidden='true')
+
+        //- Before
+        each page in before
+          li
+            a(href=page.link, aria-label='Page ' + page.page)= page.page
+
+        //- Current
+        each page, index in pages
+          if current - 1 === index
+            li.current #[span.show-for-sr= 'You\'re on page'] #{current}
+
+        //- After
+        each page in after
+          li
+            a(href=page.link, aria-label='Page ' + page.page)= page.page
+
+        //- Divider (if there is a gap between after and end)
+        if after[after.length - 1] && end[0] && after[after.length - 1].page + 2 < end[0].page + 1
+          li.ellipsis(aria-hidden='true')
+
+        //- End
+        each page in end
+          li
+            a(href=page.link, aria-label='Page ' + page.page)= page.page
+
+        //- Next
+        if next
+          li.pagination-next
+            a(href=nextLink) Next #[span.show-for-sr page]
+        else
+          li.pagination-next.disabled Next #[span.show-for-sr page]

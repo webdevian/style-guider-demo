@@ -1,0 +1,6 @@
+mixin sub-menu(items)
+  nav.sub-menu&attributes(attributes)
+    ul
+      each item in items
+        li(class=item.active ? 'active' : null)
+          a(href=item.link)= item.label

@@ -1,0 +1,40 @@
+@mixin style-guider-demo-cards {
+  .card {
+    display: block;
+    padding: rem-calc(24);
+
+    &.flat {
+      background-color: $faint-gray;
+    }
+
+    &.shadow {
+      border: 1px solid $faint-gray;
+      background-color: $white;
+      box-shadow: 0 0 6px 1px $shadow-gray;
+    }
+
+    > a {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    a {
+      color: $blue;
+    }
+  }
+
+  .meta,
+  .meta a,
+  time,
+  time a {
+    color: $medium-gray;
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+  }
+}

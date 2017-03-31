@@ -1,0 +1,10 @@
+mixin quick-links(items, vertical, four, six)
+  - var classes = ''
+  - classes = classes + (vertical ? 'vertical ' : '')
+  - classes = classes + ((items.length === 4) || four ? 'four ' : '')
+  - classes = classes + ((items.length === 6) || six ? 'six ' : '')
+  nav.quick(class=classes)&attributes(attributes)
+    ul
+      each item in items
+        li(class=item.icon)
+          a(href=item.link)= item.label

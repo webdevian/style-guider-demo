@@ -1,0 +1,77 @@
+@mixin style-guider-demo-layout {
+  main,
+  .contain,
+  .row {
+    @include grid-row();
+    clear: both;
+  }
+
+  .nest {
+    @include grid-row-nest();
+    clear: both;
+  }
+
+  .full,
+  .content,
+  .sidebar {
+    @include rprop(padding-top, rem-calc(24), rem-calc(36), rem-calc(48));
+    @include rprop(padding-bottom, rem-calc(24), rem-calc(36), rem-calc(48));
+
+    &.no-pad {
+      // For use in docs where we keep breaking out of
+      // containers to remove the extra whitespace
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &.no-top-pad {
+      padding-top: 0;
+    }
+
+    &.no-bottom-pad {
+      padding-bottom: 0;
+    }
+  }
+
+  .full {
+    @include grid-column(12);
+  }
+
+  .content {
+    @include grid-columns(12, 7, 8);
+    @include breakpoint(medium) {
+      border-right: 1px solid $faint-gray;
+
+      &.no-border {
+        border: 0;
+      }
+    }
+  }
+
+  .sidebar {
+    @include grid-columns(12, 5, 4);
+  }
+
+  .breakout {
+    margin-top: rem-calc(20);
+    margin-right: calc(50% - 50vw);
+    margin-bottom: rem-calc(20);
+    margin-left: calc(50% - 50vw);
+  }
+
+  .half {
+    @include grid-columns(12, 6, 6, true)
+  }
+
+  .third {
+    @include grid-columns(12, 4, 4, true)
+  }
+
+  .quarter {
+    @include grid-columns(6, 3, 3, true)
+  }
+
+  .sixth {
+    @include grid-columns(6, 3, 2, true)
+  }
+}

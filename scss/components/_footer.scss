@@ -1,0 +1,120 @@
+@mixin style-guider-demo-footer {
+  footer {
+    @extend %clearfix;
+    background-color: $darker-blue;
+    color: $white;
+    font-size: rem-calc(14);
+
+    ul {
+      margin: 0;
+      list-style: none;
+    }
+
+    a {
+      color: $lighter-blue;
+
+      &:hover,
+      &:focus {
+        color: $light-blue;
+        text-decoration: underline;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: $white;
+    }
+
+    .top {
+      @extend %clearfix;
+      padding: rem-calc(42 0);
+      border-top: rem-calc(15) solid $dark-blue;
+      background-color: $blue;
+
+      @include breakpoint(medium down) {
+        nav:nth-of-type(3) {
+          float: right;
+        }
+      }
+
+      nav {
+        @include grid-columns(6, 3, 2);
+      }
+
+      ul {
+        @include breakpoint(medium down) {
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+
+    aside {
+      @include grid-columns(12, 6, 4);
+
+      // Could do with adding extra margin here
+      // but it's tricky as the widths are already
+      // balanced. Would need to set margin then
+      // deduct it from width, for each size, and
+      // first / last variants
+
+      border-right: 3px solid $dark-blue;
+      border-left: 3px solid $dark-blue;
+
+      &:first-child {
+        border-left: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    small {
+      font-size: rem-calc(10);
+    }
+
+    nav {
+      h4 {
+        color: $lighter-blue;
+        font-size: rem-calc(18);
+        font-weight: bold;
+        line-height: 1;
+      }
+    }
+
+    .middle {
+      padding: rem-calc(16);
+      background-color: $dark-blue;
+
+      span {
+        float: left;
+      }
+
+      nav {
+        float: right;
+      }
+
+      li {
+        display: inline;
+        margin-right: rem-calc(21);
+      }
+    }
+
+    .bottom {
+      padding: rem-calc(16 0);
+      color: $light-blue;
+      font-size: rem-calc(11);
+      letter-spacing: .05px; // Makes text more legible
+      text-align: center;
+
+      p {
+        max-width: none;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+      }
+    }
+  }
+}

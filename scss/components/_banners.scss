@@ -1,0 +1,39 @@
+@mixin style-guider-demo-banners {
+  .banner {
+    @extend %clearfix;
+    position: relative;
+    width: 100%;
+    padding: rem-calc(0 24);
+    border-top: $faint-border;
+    border-bottom: $faint-border;
+
+    > div {
+      position: relative;
+      left: 50%;
+      padding: rem-calc(38 0);
+      float: left;
+      transform: translateX(-50%);
+
+      * {
+        margin: 0;
+      }
+
+      *:last-child {
+        color: $red;
+        font-weight: normal;
+      }
+    }
+
+    &.logo > div {
+      padding-right: rem-calc(95 + 8);
+      background-image: url(#{$img-path}style-guider-demo-logo.png);
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: rem-calc(95);
+    }
+
+    &.center {
+      text-align: center;
+    }
+  }
+}

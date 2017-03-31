@@ -23,24 +23,14 @@ html.no-js(lang='en')
   body
     if options && options.skipLink
       +skip-link
-    if options && options.noScript
-      +noscript
+
+    //- Custom top menu component
+    +top-menu(menuLinks)
 
     main#content
 
-      h3 Menu
-      ul(role='navigation')
-        each item in menuLinks
-          - var classes = ''
-          - classes = classes + (item.children ? 'has-dropdown' : '')
-          - classes = classes + (item.active ? ' active' : '')
-          li(class=classes)
-            a(href=item.link ? item.link : '#', tabindex=0)= item.label
-            if item.children
-              ul(role='menu')
-                each child in item.children
-                  li(class=child.active ? 'active' : null)
-                    a(href=child.link, role='menuitem')= child.label
+      if options && options.noScript
+        +noscript
 
       .full
         h1#root #{meta.title} #[small= version]

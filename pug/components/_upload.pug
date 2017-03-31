@@ -1,0 +1,13 @@
+mixin upload(name, id, label, buttonText, helperBelow, helperAbove, error)
+  div(class=error ? 'has-error' : '')
+    if label
+      label(for=id)= label
+    if helperAbove
+      span= buttonText
+    input(type='file', id=id, name=name, tabindex=-1)&attributes(attributes)
+    label(for=id, tabindex=0)= buttonText
+    if helperBelow
+      span= helperBelow
+    block
+    if error
+      span.error-message= error

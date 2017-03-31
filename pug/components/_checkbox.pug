@@ -1,0 +1,15 @@
+mixin checkbox(name, id, legend, helperBelow, helperAbove, options, stack, error)
+  div(class=error ? 'has-error' : '')&attributes(attributes)
+    legend(for=id)= legend
+    if helperAbove
+      span= helperAbove
+    fieldset(class=stack ? 'stack-list' : null)
+      each option in options
+        div
+          input(type='checkbox', id=id + '-' + option.value, value=option.value, name=name, checked=option.checked)
+          label(for=id + '-' + option.value)= option.label
+    if helperBelow
+      span= helperBelow
+    block
+    if error
+      span.error-message= error

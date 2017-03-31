@@ -1,0 +1,21 @@
+mixin select(name, selectedValue, id, label, helperBelow, helperAbove, options, error)
+  div(class=error ? 'has-error' : '')
+    label(for=id)= label
+    if helperAbove
+      span= helperAbove
+    select(id=id, name=name)&attributes(attributes)
+      each option in options
+        //- Change to selectedValue, we don't want confusing matching variables
+        if option.children && option.children.length
+          optgroup(label=option.label)
+            each child in option.children
+              - var isSelected = ('' + child['value']) === ('' + selectedValue) ? true : false
+              option(value=child.value, selected=isSelected)= child.label
+        else
+          - var isSelected = ('' + option['value']) === ('' + selectedValue) ? true : false
+          option(value=option.value, selected=isSelected)= option.label
+    if helperBelow
+      span= helperBelow
+    block
+    if error
+      span.error-message= error

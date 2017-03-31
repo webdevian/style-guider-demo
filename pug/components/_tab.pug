@@ -1,0 +1,15 @@
+mixin tab-list(tabs)
+  .tabs&attributes(attributes)
+    ul(role='tablist')
+      each tab, index in tabs
+        if tab.active
+          li.active
+            a(role='tab', href='#tab-' + tab.id || index, tabindex=0, data-tab=tab.id || index)= tab.label
+        else
+          li
+            a(role='tab', href='#tab-' + tab.id || index, tabindex=0, data-tab=tab.id || index)= tab.label
+    block
+
+mixin tab(id, active)
+  .panel(role='tabpanel', id='tab-' + id, data-tab=id, class=active ? 'active' : '')
+    block

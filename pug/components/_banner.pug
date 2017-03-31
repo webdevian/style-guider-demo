@@ -1,0 +1,8 @@
+mixin banner(heading, subHeading, logo, center)
+  - var classes = ''
+  - classes = classes + (logo ? 'logo ' : '')
+  - classes = classes + (center ? 'center ' : '')
+  section.banner(class=classes)&attributes(attributes)
+    div
+      h2= heading
+      h3= subHeading

@@ -12,8 +12,28 @@
 // Components
 // ---------------------
 
-@import 'components/example';
-
+@import 'components/reset';
+@import 'components/animation';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/tables';
+@import 'components/top-menu';
+@import 'components/sub-menu';
+@import 'components/quick-links';
+@import 'components/cards';
+@import 'components/banners';
+@import 'components/alert';
+@import 'components/hero';
+@import 'components/footer';
+@import 'components/login';
+@import 'components/pagination';
+@import 'components/breadcrumbs';
+@import 'components/tabs';
+@import 'components/datepicker';
+@import 'components/progress';
+@import 'components/layout';
+@import 'components/typography';
+@import 'components/accessibility';
 //------ yeoman import hook ------ //
 //- NB! The above line is required for our yeoman generator and should not be changed.
 
@@ -25,7 +45,31 @@
 @mixin style-guider-demo-everything {
 
   // Components - Optional
-  @include style-guider-demo-example;
+
+  @include style-guider-demo-reset;
+  @include style-guider-demo-layout;
+  @include style-guider-demo-typography;
+  @include style-guider-demo-accessibility;
+  @include style-guider-demo-alert;
+  @include style-guider-demo-banners;
+  @include style-guider-demo-buttons;
+  @include style-guider-demo-cards;
+  @include style-guider-demo-banners;
+  @include style-guider-demo-footer;
+  @include style-guider-demo-forms;
+  @include style-guider-demo-hero;
+  @include style-guider-demo-quick-links;
+  @include style-guider-demo-sub-menu;
+  @include style-guider-demo-tables;
+  @include style-guider-demo-top-menu;
+  @include style-guider-demo-login;
+  @include style-guider-demo-pagination;
+  @include style-guider-demo-breadcrumbs;
+  @include style-guider-demo-tabs;
+  @include style-guider-demo-datepicker;
+  @include style-guider-demo-progress;
+
+  @include style-guider-demo-animation;
 
   //------ yeoman include hook ------ //
   //- NB! The above line is required for our yeoman generator and should not be changed.

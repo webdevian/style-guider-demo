@@ -1,0 +1,49 @@
+.swatches {
+  @extend %clearfix;
+  @include grid-layout(5, '*', rem-calc(15));
+  margin-bottom: 1.6rem;
+
+  > * {
+    @include rprop('font-size', .6rem, .9rem, 1rem);
+    display: block;
+    height: 0;
+    padding-top: calc(10% - 1em);
+    padding-bottom: calc(10% + 1em);
+    background-color: $black;
+    color: $white;
+    font-family: $font-family-monospace;
+    text-align: center;
+    text-transform: lowercase;
+
+    &::before {
+      content: '$';
+    }
+  }
+
+  &.big {
+    @include grid-layout(3, '*', rem-calc(15));
+
+    > * {
+      padding-top: calc(16.66% - 1em);
+      padding-bottom: calc(16.66% + 1em);
+      font-size: 1.2rem;
+
+    }
+  }
+
+
+  // sass-lint:disable one-declaration-per-line
+  .red { background-color: $red; }
+  .blue { background-color: $blue; }
+  .claret { background-color: $claret; }
+  .flame { background-color: $flame; }
+  .carrot { background-color: $carrot; }
+  .buttercup { background-color: $buttercup; }
+  .sunglow { background-color: $sunglow; color: $black;}
+  .malibu { background-color: $malibu; color: $black;}
+  .bermuda { background-color: $bermuda; color: $black; }
+  .java { background-color: $java; }
+  .verdun { background-color: $verdun; }
+  .grey { background-color: $grey; }
+
+}

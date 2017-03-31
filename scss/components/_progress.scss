@@ -1,0 +1,29 @@
+@mixin style-guider-demo-progress {
+  @include foundation-progress-element;
+
+  progress[value] { // sass-lint:disable-line no-qualifying-elements
+    cursor: progress;
+  }
+
+  .show-percent {
+    position: relative;
+    padding-right: rem-calc(48);
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: rem-calc(48);
+      height: $progress-height;
+      padding-right: rem-calc(8);
+      padding-left: rem-calc(8);
+      background: $light-gray;
+      color: $white;
+      font-size: rem-calc(12);
+      font-weight: bold;
+      text-align: center;
+      content: attr(value) '%';
+    }
+  }
+}

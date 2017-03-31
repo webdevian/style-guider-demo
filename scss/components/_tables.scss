@@ -1,0 +1,52 @@
+@mixin style-guider-demo-tables {
+  @include foundation-table;
+
+  @include breakpoint(medium down) {
+    .stack {
+
+      tbody {
+        border-bottom: 0;
+      }
+
+      tr {
+        padding: rem-calc(6 0);
+        border-bottom: $table-border;
+        background-color: $table-background !important; // sass-lint:disable-line no-important
+        // Important required to override hover etc
+      }
+
+      tr:nth-child(even) {
+        // Override rule caused by odd/even colours
+        border-bottom: $table-border;
+      }
+
+      // Javascript passes the table headers for each td cell to
+      // the data-th attribute, so we can display it again
+      [data-th]::before {
+        display: block;
+        font-size: rem-calc(14);
+        font-weight: bold;
+        line-height: 1;
+        content: attr(data-th) ':';
+      }
+
+      td .button,
+      td button {
+        margin-top: rem-calc(8);
+      }
+
+      td:empty {
+        display: none;
+      }
+    }
+  }
+
+  table .button,
+  table button {
+    margin-bottom: 0;
+  }
+
+  tr th {
+    background-color: $table-head-background;
+  }
+}

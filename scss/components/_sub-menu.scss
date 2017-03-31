@@ -1,0 +1,41 @@
+@mixin style-guider-demo-sub-menu {
+  .sub-menu {
+    width: 100%;
+    border-top: 1px solid $faint-gray;
+    border-bottom: 1px solid $faint-gray;
+    background-color: $white;
+
+    ul {
+      @include grid-row();
+      margin-bottom: 0;
+      list-style: none;
+
+      @include breakpoint(xlarge) {
+        border-left: 1px solid $faint-gray;
+      }
+    }
+
+    li {
+      float: left;
+      border-right: 1px solid $faint-gray;
+    }
+
+    .active a {
+      background-color: $faint-gray;
+    }
+
+    a {
+      display: block;
+      padding: rem-calc(8 28);
+      background-color: $white;
+      color: $dark-gray;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        background-color: $faint-gray;
+        color: $dark-gray;
+      }
+    }
+  }
+}

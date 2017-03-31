@@ -1,0 +1,57 @@
+@mixin style-guider-demo-buttons {
+  .button,
+  button {
+    @include button();
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &.alert {
+      @include button-style($red, scale-color($red, $lightness: -15%), $white);
+    }
+
+    &.secondary {
+      @include button-style($medium-gray, scale-color($medium-gray, $lightness: -15%), $white);
+    }
+
+    &.large {
+      padding: rem-calc(17 20);
+      font-size: rem-calc(20);
+    }
+
+    &.expanded {
+      display: block;
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &.small {
+      padding: rem-calc(7 10);
+    }
+
+    &.tiny {
+      padding: rem-calc(5 6);
+      font-size: rem-calc(13);
+    }
+
+    &:not(:last-child) {
+      margin-right: rem-calc(12);
+    }
+  }
+
+  [type=submit] {
+    @extend .button;
+  }
+
+  .button[disabled] {
+    background: $lighter-gray;
+    cursor: not-allowed;
+
+    &:hover {
+      background: $lighter-gray;
+    }
+  }
+}

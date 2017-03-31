@@ -46,7 +46,7 @@
 // ------------------------------------
 
 // Main brand red - medium candy apple
-$red: #d71a16;
+$red: #992c0e;
 
 // Main brand blue - dark midnight
 $blue: #2e7cac;
@@ -72,10 +72,10 @@ $dark-grey: #35362f;
 
 // Fonts - Helvetica falls back to Arial
 // -------------------------------------
-$helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$opensans: 'Open Sans', Helvetica, Arial, sans-serif;
+$varela: 'Varela+Round', Arial, sans-serif;
 
-
-// APC Settings
+// DEMO Settings
 // ------------
 
 $img-path: 'node_modules/style-guider-demo/img/' !default;
@@ -88,10 +88,10 @@ $faint-border: 2px solid $faint-gray;
 
 $shadow-gray: rgba(204, 204, 204, .4);
 
-$lighter-blue: #c9cfde;
-$light-blue: #94a1bd;
-$dark-blue: #0b265c;
-$darker-blue: #09204e;
+$lighter-blue: #94caeb;
+$light-blue: #3999d4;
+$dark-blue: #236085;
+$darker-blue: #184059;
 
 @import 'util/util';
 
@@ -116,7 +116,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: #474747;
-$body-font-family: $helvetica;
+$body-font-family: $opensans;
 $body-antialiased: true;
 $global-margin: 1.6rem;
 $global-padding: 1rem;
@@ -160,7 +160,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: $varela;
 $header-font-weight: 300;
 $header-font-style: normal;
 $font-family-monospace: 'Hack', Consolas, 'Liberation Mono', Courier, monospace;

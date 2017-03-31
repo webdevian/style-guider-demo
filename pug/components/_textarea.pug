@@ -1,0 +1,11 @@
+mixin textarea(name, id, label, rows, helperBelow, helperAbove, error)
+  div(class=error ? 'has-error' : '')
+    label(for=id)= label
+    if helperAbove
+      span= helperAbove
+    textarea(id=id, name=name, rows=rows)&attributes(attributes)
+      block
+    if helperBelow
+      span= helperBelow
+    if error
+      span.error-message= error

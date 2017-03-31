@@ -1,0 +1,73 @@
+@mixin style-guider-demo-hero {
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 66.67%;
+    overflow: hidden;
+
+    @include breakpoint(medium) {
+      padding-bottom: 45%;
+    };
+
+    @include breakpoint(large) {
+      padding-bottom: 33%;
+    };
+
+    @include breakpoint(xlarge) {
+      padding-bottom: 30%;
+    };
+
+    @include breakpoint(xxlarge) {
+      padding-bottom: 25%;
+    };
+
+    > * {
+      @include rprop('width', 120%, 100%);
+      @include rprop('max-width', 120%, 100%);
+    }
+
+    &.slim {
+      padding-bottom: 40%;
+
+      @include breakpoint(medium) {
+        padding-bottom: 30%;
+      };
+
+      @include breakpoint(large) {
+        padding-bottom: 25%;
+      };
+
+    }
+
+    &.outline {
+      &::after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(#{$img-path}hero-overlay.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        content: '';
+
+        @include breakpoint(small only) {
+          background-size: auto 120%;
+        };
+      }
+
+      > * {
+        display: block;
+        width: $global-width;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  menu + .hero {
+    @include rprop('margin-top', rem-calc(-40), rem-calc(-20));
+  }
+}

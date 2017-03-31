@@ -1,0 +1,108 @@
+@mixin style-guider-demo-datepicker {
+
+  .hasDatepicker { // sass-lint:disable-line class-name-format
+    padding-left: rem-calc(32);
+    background-image: url(#{$img-path}calendar.png);
+    background-repeat: no-repeat;
+    background-position: left rem-calc(8) center;
+    cursor: pointer;
+
+    &:focus {
+      background-image: url(#{$img-path}calendar-focus.png);
+    }
+  }
+
+  .ui-datepicker {
+    @extend %clearfix;
+    display: none;
+    width: rem-calc(350);
+    max-width: 100%;
+    padding-top: rem-calc(8);
+    padding-bottom: rem-calc(8);
+
+    table {
+      margin-bottom: 0;
+    }
+
+    th {
+      background-color: $white;
+      text-align: center;
+    }
+
+    td {
+      width: 14.285%; // 100 / 7
+      text-align: center;
+
+      &.ui-datepicker-current-day {
+        border-width: 3px;
+        border-style: solid;
+        border-color: $light-gray;
+        font-weight: bold;
+      }
+    }
+
+    a {
+      line-height: rem-calc(18);
+    }
+
+    a:hover,
+    a:focus {
+      font-weight: bold;
+    }
+
+    tr:nth-child(odd) {
+      background: smart-scale($table-background, 15%);
+    }
+  }
+
+  .ui-datepicker-other-month {
+    background-color: $white;
+  }
+
+  .ui-datepicker-header,
+  .ui-datepicker-calendar {
+    padding: rem-calc(8 8);
+    background-color: $white;
+    box-shadow: $input-shadow-focus;
+
+  }
+
+  .ui-datepicker-header {
+    background-color: scale-color($red, $saturation: -20%, $lightness: 20%);
+  }
+
+  .ui-datepicker-calendar {
+    padding-top: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $light-gray;
+    border-top-color: $lighter-gray;
+  }
+
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    width: 50%;
+    float: left;
+    color: $white;
+    font-weight: normal;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      font-weight: normal;
+      text-decoration: underline;
+    }
+  }
+
+  .ui-datepicker-next {
+    text-align: right;
+  }
+
+  .ui-datepicker-title {
+    width: 100%;
+    color: $white;
+    font-size: rem-calc(20);
+    font-weight: bold;
+    text-align: center;
+  }
+}

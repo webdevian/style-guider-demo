@@ -1,0 +1,74 @@
+@mixin style-guider-demo-typography {
+
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round'); // sass-lint:disable-line no-url-domains no-url-protocols
+
+
+  :root {
+    font-size: 1.125rem;
+
+    @include breakpoint(medium) {
+      font-size: 1rem;
+    }
+  }
+
+  @include foundation-typography;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &.heavy {
+      font-weight: 400;
+    }
+  }
+
+  p {
+    max-width: rem-calc(700);
+  }
+
+  // Stop CMS editors abusing p tags as line breaks
+  p:empty {
+    display: none;
+  }
+
+  main p + ul,
+  main p + ol {
+    margin-top: -1.3rem;
+  }
+
+  main a:hover,
+  main a:focus {
+    text-decoration: underline;
+  }
+
+  dt {
+    @extend h5;
+  }
+
+  dd + dt {
+    margin-top: 1.6rem;
+  }
+
+  blockquote {
+    font-weight: 400;
+  }
+
+  .closeable {
+    position: relative;
+
+    .close {
+      position: absolute;
+      top: rem-calc(4);
+      right: rem-calc(8);
+      font-size: 87.5%;
+      text-decoration: none;
+      cursor: pointer;
+
+      &::before {
+        content: '× ';
+      }
+    }
+  }
+}

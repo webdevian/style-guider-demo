@@ -1,4 +1,4 @@
-mixin example(type, name, value, id, label, helperBelow, helperAbove, error)
+mixin input(type, name, value, id, label, helperBelow, helperAbove, error)
   div(class=error ? 'has-error' : '')
     label(for=id)= label
     if helperAbove

@@ -1,0 +1,335 @@
+@mixin style-guider-demo-top-menu {
+  // sass-lint:disable nesting-depth
+
+  menu {
+    @extend %clearfix;
+    position: relative;
+    width: 100%;
+    // In case there are no block children
+    min-height: rem-calc(42);
+    margin: rem-calc(0 0 40);
+    padding: 0;
+    background-color: $dark-gray;
+    color: $white;
+
+    .logo-link {
+      display: block;
+      position: absolute;
+      left: rem-calc(8);
+      width: rem-calc(100);
+      height: rem-calc(100);
+      padding: 0;
+      background-color: transparent;
+      background-image: url('#{$img-path}style-guider-demo-logo.png');
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 100%;
+      text-indent: -10000px;
+      z-index: 5;
+    }
+
+    // Helper class for when the logo is
+    // overhanging onto content
+    &.safe-pad .logo-link {
+      width: rem-calc(80);
+      height: rem-calc(80);
+    }
+
+    .toggle {
+      display: none;
+    }
+
+    .menu-link {
+      display: block;
+      position: relative;
+      right: 0;
+      padding: rem-calc(13 38 13 4);
+      color: $white;
+      font-weight: bold;
+      line-height: 1;
+      text-align: right;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        background: scale-color($dark-gray, $lightness: 10%);
+        text-decoration: underline;
+      }
+    }
+
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after {
+      display: block;
+      position: absolute;
+      width: rem-calc(25);
+      height: rem-calc(4);
+      border-radius: 1px;
+      background-color: $white;
+      content: '';
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      top: rem-calc(19);
+      right: rem-calc(6);
+    }
+
+    .menu-icon::before {
+      top: rem-calc(-8);
+    }
+
+    .menu-icon::after {
+      top: rem-calc(8);
+    }
+
+    // Top level and dropdown links
+    a,
+    a:hover,
+    a:focus {
+      color: $white;
+    }
+
+    a {
+      display: block;
+      //
+      padding: rem-calc(13 19);
+      transition: background .3s;
+      background-color: $dark-gray;
+      line-height: 1;
+    }
+
+    ul,
+    ul ul {
+      margin: 0;
+      list-style: none;
+    }
+
+    &.open .wrap > ul {
+      display: block;
+    }
+
+    // Negative margins for phantom borders
+    // appearing between menu items
+    @include breakpoint(small only) {
+      li {
+        margin-top: -1px;
+      }
+
+      li a,
+      .wrap > ul > li a {
+        &:focus {
+          outline: none;
+          background-color: $light-gray;
+          text-decoration: underline;
+          text-shadow: none;
+        }
+      }
+    }
+
+    ul ul li {
+      &:not(:first-child) {
+        margin-top: -1px;
+      }
+    }
+
+    .active ul .active a {
+      color: $light-gray;
+    }
+
+    .wrap > ul {
+      display: none;
+
+      li {
+        text-align: right;
+      }
+
+      > li {
+
+        &.down a {
+          @include breakpoint(small only) {
+            background-color: scale-color($dark-gray, $lightness: 5%);
+          }
+        }
+
+        ul {
+          display: none;
+          position: relative;
+          top: -100%;
+        }
+
+        &.down ul {
+          display: block;
+
+          @include breakpoint(small only) {
+            a {
+              padding: rem-calc(8 36 8 21);
+              font-size: rem-calc(14);
+            }
+          }
+        }
+      }
+    }
+
+    @include breakpoint(medium) {
+
+      margin: rem-calc(0 0 20);
+
+      .logo-link {
+        top: rem-calc(16);
+        right: rem-calc(16);
+        left: auto;
+        width: rem-calc(120);
+        height: rem-calc(120);
+      }
+
+      &.safe-pad .logo-link {
+        top: rem-calc(8);
+        right: rem-calc(8);
+        width: rem-calc(90);
+        height: rem-calc(90);
+      }
+
+      li a {
+        display: block;
+        text-align: left;
+
+        &:hover,
+        &:focus {
+          outline: none;
+          background-color: $light-gray;
+          text-decoration: underline;
+          text-shadow: none;
+        }
+      }
+
+      .active ul .active a {
+        color: $white;
+      }
+
+      .active > a,
+      .active > a:hover,
+      .active > a:focus {
+        background-color: $blue;
+      }
+
+      // Hide toggle checkbox desktop
+      .menu-link,
+      .menu-icon {
+        display: none;
+      }
+
+      .wrap {
+        @include grid-row();
+        position: relative;
+        padding-right: rem-calc(116);
+
+        > ul {
+          display: block;
+
+          > li {
+            position: relative;
+            float: left;
+            border-right: 1px solid $white;
+
+            // Use .down to "activate" a menu item
+            // on click and drop down contents
+            &.down {
+
+              ul {
+                display: block;
+              }
+            }
+
+            // Hidden by default
+            ul {
+              display: none;
+              position: absolute;
+              top: 100%;
+              right: auto;
+              left: 0;
+              margin-left: -1px; // Line up with border
+              border: 1px solid $white;
+              list-style: none;
+              z-index: 1;
+            }
+          }
+        }
+      }
+
+      .has-dropdown > a {
+        padding-right: rem-calc(24);
+
+        &::after {
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: rem-calc(10);
+          width: 0;
+          height: 0;
+          margin-top: rem-calc(-1);
+          border: inset rem-calc(4);
+          border-bottom-width: 0;
+          border-top-style: solid;
+          border-color: $white transparent transparent;
+          content: '';
+        }
+      }
+    }
+
+    @include breakpoint(large) {
+      .wrap {
+        padding-right: rem-calc(160);
+      }
+
+      .logo-link {
+        width: rem-calc(144);
+        height: rem-calc(144);
+      }
+
+      &.safe-pad + * {
+        margin-top: rem-calc(30);
+      }
+
+      &.safe-pad .logo-link {
+        width: rem-calc(100);
+        height: rem-calc(100);
+      }
+    }
+
+    @include breakpoint($global-width) {
+      .wrap > ul > li:first-child {
+        border-left: 1px solid $white;
+      }
+    }
+  }
+
+  // No JS support
+
+  .no-js .has-dropdown > a:focus + ul,
+  .no-js .has-dropdown:hover ul {
+    display: block;
+  }
+
+  @include breakpoint(small only) {
+    .no-js .menu-link:focus,
+    .no-js .menu-link:hover {
+      + ul,
+      + ul ul {
+        display: block;
+      }
+    }
+
+    .no-js menu ul:hover,
+    .no-js menu ul:hover ul {
+      display: block;
+    }
+
+    .no-js menu ul ul a {
+      padding: rem-calc(8 36 8 21);
+      background-color: scale-color($dark-gray, $lightness: 5%);
+      font-size: rem-calc(14);
+    }
+  }
+}

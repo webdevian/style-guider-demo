@@ -1,0 +1,34 @@
+@mixin style-guider-demo-login {
+  .login-page {
+    position: relative;
+    min-height: 100vh;
+    background-color: $blue;
+  }
+
+  .login {
+    @include rprop('max-width', 90%, rem-calc(400));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: rem-calc(24);
+    transform: translateY(-50%) translateX(-50%);
+    background-color: $white;
+  }
+
+  .login-go {
+    @extend .button;
+    width: 100%;
+  }
+
+  .login-signup {
+    margin-top: rem-calc(16);
+    padding-top: rem-calc(16);
+    border-top: 1px solid $faint-gray;
+    text-align: center;
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+}

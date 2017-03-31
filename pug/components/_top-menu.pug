@@ -1,0 +1,21 @@
+mixin top-menu(items, logo, logoLink, icon, linkText)
+  menu(role='banner')&attributes(attributes)
+    .wrap
+      if logo
+        a.logo-link(href=logoLink, title='Home', tabindex=-1) Home
+      a.menu-link(href='#')= linkText
+        if icon
+          span.menu-icon
+      if items
+        ul(role='navigation')
+          each item in items
+            - var classes = ''
+            - classes = classes + (item.children ? 'has-dropdown' : '')
+            - classes = classes + (item.active ? ' active' : '')
+            li(class=classes)
+              a(href=item.link ? item.link : '#', tabindex=0)= item.label
+              if item.children
+                ul(role='menu')
+                  each child in item.children
+                    li(class=child.active ? 'active' : null)
+                      a(href=child.link, role='menuitem')= child.label

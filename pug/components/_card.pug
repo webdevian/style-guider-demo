@@ -1,0 +1,18 @@
+mixin card(type, title, subtitle, link, linkLabel)
+  article.card(class=type)&attributes(attributes)
+    if subtitle
+      span.meta
+      if link
+        span.meta
+          a(href=link, tabindex=-1)= subtitle
+      else
+        span.meta= title
+    if title
+      if link
+        h4
+          a(href=link)= title
+      else
+        h4= title
+    block
+    if link && linkLabel
+      a(href=link)= linkLabel

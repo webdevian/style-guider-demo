@@ -1,0 +1,8 @@
+mixin callout(type, header, errors)
+  .callout(class=type)&attributes(attributes)
+    if header
+      h5= header
+    block
+    if errors
+      each error in errors
+        p #[a(href='#' + error.id)= error.label] - #{error.message}

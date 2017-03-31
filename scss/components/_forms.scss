@@ -1,0 +1,156 @@
+@mixin style-guider-demo-forms {
+  @include foundation-forms;
+
+  %helper-text {
+    // Input hint or example
+    display: block;
+    margin-top: -1.6rem;
+    margin-bottom: 1.6rem;
+    color: $medium-gray;
+    font-size: rem-calc(12);
+    font-style: italic;
+  }
+
+  input,
+  textarea,
+  select,
+  label,
+  legend,
+  fieldset {
+    + span,
+    + span + span  {
+      @extend %helper-text;
+    }
+  }
+
+  [for] {
+    cursor: pointer;
+  }
+
+  label + span,
+  legend + span {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  legend {
+    margin-bottom: 0;
+  }
+
+  fieldset {
+    margin-bottom: 1.6rem;
+
+    label + span + .error-message {
+      margin-top: 0;
+    }
+
+    > div {
+      display: inline-block;
+    }
+
+    &.stack-list > div {
+      display: block;
+    }
+  }
+
+  [type=file] + label {
+    @extend .button, .button.secondary;
+
+    position: relative;
+    padding-left: rem-calc(36);
+
+    + span {
+      margin-top: -1.6rem;
+      margin-bottom: 1.6rem;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      width: 0;
+      height: 0;
+      transform: translateY(-50%);
+      border-width: 0 5.5px 9px;
+      border-style: solid;
+      border-color: transparent transparent $white;
+      content: '';
+    }
+  }
+
+  .has-error {
+    input,
+    textarea,
+    select {
+      border-color: $red;
+    }
+
+    label,
+    legend,
+    .error-message {
+      color: $red;
+    }
+
+    [type=file] + label {
+      color: $white;
+    }
+
+    [type='checkbox'],
+    [type='radio'] {
+      + label {
+        color: $black;
+      }
+    }
+
+    .error-message {
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+
+  [type='text'],
+  [type='password'],
+  [type='date'],
+  [type='datetime'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='week'],
+  [type='email'],
+  [type='number'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='url'],
+  [type='color'],
+  select,
+  textarea,
+  .input-group {
+    max-width: rem-calc(700);
+    margin-bottom: 1.6rem;
+  }
+
+  [type='file'],
+  [type='checkbox'],
+  [type='radio'] {
+    // Makes vertical lists of radios a bit tighter
+    margin-bottom: .6rem;
+    cursor: pointer;
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    +[for] {
+      // Remove non-click space between box and label
+      margin-left: 0;
+      padding-left: .5rem;
+    }
+  }
+
+  .input-group input {
+    margin-bottom: 0;
+  }
+
+  [type=file] {
+    @include element-invisible;
+  }
+}

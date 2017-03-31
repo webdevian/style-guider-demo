@@ -11,17 +11,17 @@ module.exports = {
    */
   meta: {
     // Title tag
-    title: 'style-guider-demo',
+    title: 'Style Guider Demo',
     // Include meta-basic mixin?
     basic: true,
     // Include meta-social mixin?
     social: {
       // Meta values for the meta social mixin
-      url: '',
-      title: 'style-guider-demo',
+      url: 'https://style-guider-demo.github.io/',
+      title: 'Style Guider Demo',
       image: '',
-      description: '',
-      siteName: 'style-guider-demo'
+      description: 'Demo site for generator-style-guider',
+      siteName: 'Style Guider'
     }
   },
 
@@ -41,7 +41,8 @@ module.exports = {
    * Introdcution text. Array of paragraphs. Each string will be a separate paragraph, inline pug will be rendered
    */
   introduction: [
-    "This is the style-guider-demo CSS framework and style guide, built with #[a(href='https://www.npmjs.com/package/generator-style-guider', target='_blank') Style Guider]"
+    `This is the style-guider-demo CSS framework and style guide, built with #[a(href='https://www.npmjs.com/package/generator-style-guider', target='_blank') Style Guider]. The source code for this style guide can be found on #[a(href='https://github.com/webdevian/style-guider-demo', target='_blank') GitHub].`,
+    `This fictional style guide is designed to give a demonstration of the wide variety of components that Style Guider docs can display`
   ],
 
   /**
@@ -60,6 +61,51 @@ module.exports = {
   menu: {
     // NB! The below line is required for our yeoman generator and should not be changed.
     // ------ yeoman include hook ------ //
-    'example': []
+    'accessibility': [],
+    'colour': [],
+    'typography': [
+      'header',
+      'bold-header',
+      'sub-header',
+      'link',
+      'list',
+      'definition-list',
+      'blockquote',
+      'divider'
+    ],
+    form: [
+      'input',
+      'textarea',
+      'select',
+      'checkbox',
+      'radio',
+      'upload',
+      'datepicker',
+      'errors',
+      'callout',
+      'required',
+      'disabled',
+      'button',
+      'submit',
+      'hidden'
+    ],
+    'ui-elements': [
+      'layout',
+      'table',
+      'top-menu',
+      'hero',
+      'alert',
+      'sub-menu',
+      'quick-links',
+      'card',
+      'breadcrumbs',
+      'pagination',
+      'tab',
+      'progress',
+      'login',
+      'closeable',
+      'banner',
+      'footer'
+    ]
   }
 }

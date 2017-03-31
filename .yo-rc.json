@@ -10,6 +10,386 @@
     "husky": true,
     "longName": "style-guider-demo",
     "yarn": false,
-    "npm": true
+    "npm": true,
+    "components": {
+      "accessibility": {
+        "name": "accessibility",
+        "mixin": false,
+        "scss": true,
+        "js": false,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "accessibility"
+      },
+      "alert": {
+        "name": "alert",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "alert"
+      },
+      "blockquote": {
+        "name": "blockquote",
+        "mixin": false,
+        "scss": false,
+        "js": false,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "blockquote"
+      },
+      "bold-header": {
+        "name": "bold-header",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "bold-header"
+      },
+      "breadcrumbs": {
+        "name": "breadcrumbs",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "breadcrumbs"
+      },
+      "button": {
+        "name": "button",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "button"
+      },
+      "callout": {
+        "name": "callout",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "callout"
+      },
+      "card": {
+        "name": "card",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "card"
+      },
+      "checkbox": {
+        "name": "checkbox",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "checkbox"
+      },
+      "closeable": {
+        "name": "closeable",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "closeable"
+      },
+      "colour": {
+        "name": "colour",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "colour"
+      },
+      "definition-list": {
+        "name": "definition-list",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "definition-list"
+      },
+      "disabled": {
+        "name": "disabled",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "disabled"
+      },
+      "divider": {
+        "name": "divider",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "divider"
+      },
+      "errors": {
+        "name": "errors",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "errors"
+      },
+      "footer": {
+        "name": "footer",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "footer"
+      },
+      "form": {
+        "name": "form",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "form"
+      },
+      "header": {
+        "name": "header",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "header"
+      },
+      "hero": {
+        "name": "hero",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "hero"
+      },
+      "hidden": {
+        "name": "hidden",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "hidden"
+      },
+      "input": {
+        "name": "input",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "input"
+      },
+      "layout": {
+        "name": "layout",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "layout"
+      },
+      "link": {
+        "name": "link",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "link"
+      },
+      "list": {
+        "name": "list",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "list"
+      },
+      "login": {
+        "name": "login",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "login"
+      },
+      "pagination": {
+        "name": "pagination",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "pagination"
+      },
+      "progress": {
+        "name": "progress",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "progress"
+      },
+      "quick-links": {
+        "name": "quick-links",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "quick-links"
+      },
+      "radio": {
+        "name": "radio",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "radio"
+      },
+      "required": {
+        "name": "required",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "required"
+      },
+      "select": {
+        "name": "select",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "select"
+      },
+      "sub-header": {
+        "name": "sub-header",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "sub-header"
+      },
+      "sub-menu": {
+        "name": "sub-menu",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "sub-menu"
+      },
+      "submit": {
+        "name": "submit",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "submit"
+      },
+      "tab-list": {
+        "name": "tab-list",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "tab-list"
+      },
+      "tab": {
+        "name": "tab",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "tab"
+      },
+      "table": {
+        "name": "table",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "table"
+      },
+      "textarea": {
+        "name": "textarea",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "textarea"
+      },
+      "top-menu": {
+        "name": "top-menu",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "top-menu"
+      },
+      "typography": {
+        "name": "typography",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "typography"
+      },
+      "ui-elements": {
+        "name": "ui-elements",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "ui-elements"
+      },
+      "upload": {
+        "name": "upload",
+        "mixin": true,
+        "scss": true,
+        "js": true,
+        "docs": true,
+        "projectName": "style-guider-demo",
+        "longName": "upload"
+      }
+    }
   }
 }
