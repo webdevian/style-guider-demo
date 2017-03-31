@@ -2,7 +2,7 @@
 [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Code Climate][codeclimate-image]][codeclimate-url]
 > [View the demo](https://webdevian.github.io/style-guider-demo/)
 
-A web framework and style guide built with [Style Guider](https://www.npmjs.com/package/generator-style-guider)
+A web framework and style guide built with Style Guider [NPM](https://www.npmjs.com/package/generator-style-guider) [GitHub](https://github.com/webdevian/generator-style-guider)
 
 ## Setup
 
