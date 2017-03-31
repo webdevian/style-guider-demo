@@ -1,5 +1,7 @@
 # Style Guider Demo
 
+> [View the demo](https://webdevian.github.io/style-guider-demo/)
+
 A web framework and style guide built with [Style Guider](https://www.npmjs.com/package/generator-style-guider)
 
 ## Setup
