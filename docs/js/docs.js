@@ -1,18 +1,6 @@
 var pug = require('pug')
 
 /**
- * On page load fetch the parameters via ajax
- * and save them to window object. Set up mixins object
- */
-$(document).ready(function () {
-  $.get('docs/pug/_parameters.pug', function (response) {
-    window.codeMixins = response
-  })
-
-  window.mixins = {}
-})
-
-/**
  * Show code blocks when a show code button is clicked
  * No JS Fallback: ✅ // Don't show code buttons if js is disabled
  */
@@ -48,13 +36,9 @@ function openCode (component) {
     $component.find('.result').first().appendTo($html)
   }
 
-  $.get(schema.mixinPath || 'pug/components/_' + component + '.pug', function (mixin) {
-    window.mixins[component] = mixin
+  updateMixin(component, $component)
 
-    updateMixin(component, $component)
-
-    $component.removeClass('loading')
-  })
+  $component.removeClass('loading')
 }
 
 /**
@@ -136,7 +120,7 @@ function camelToTitle (camelCase) {
  */
 function renderEnum (params) {
   return pug.render(
-    window.codeMixins + '\n' +
+    window.components._parameters + '\n' +
     '+docs_select(name, title, id, description, options, selected)',
     params
   )
@@ -149,7 +133,7 @@ function renderEnum (params) {
  */
 function renderBoolean (params) {
   return pug.render(
-    window.codeMixins + '\n' +
+    window.components._parameters + '\n' +
     '+docs_radio(name, title, id, description, options, selected)',
     params
   )
@@ -162,7 +146,7 @@ function renderBoolean (params) {
  */
 function renderString (params) {
   return pug.render(
-    window.codeMixins + '\n' +
+    window.components._parameters + '\n' +
     '+docs_text(name, title, id, description, value)',
     params
   )
@@ -175,7 +159,7 @@ function renderString (params) {
  */
 function renderNumber (params) {
   return pug.render(
-    window.codeMixins + '\n' +
+    window.components._parameters + '\n' +
     '+docs_number(name, title, id, description, value, null, null, 1)',
     params
   )
@@ -188,7 +172,7 @@ function renderNumber (params) {
  */
 function renderJSON (params) {
   return pug.render(
-    window.codeMixins + '\n' +
+    window.components._parameters + '\n' +
     '+docs_json(name, title, id, description)' + '\n' +
     '  |' + JSON.stringify(params.value),
     params
@@ -320,7 +304,7 @@ function writeMixinCall (component, $component) {
  */
 function renderMixin (component, mixinCall) {
   return pug.render(
-    window.mixins[component] + '\n' + mixinCall,
+    window.components[component].mixin + '\n' + mixinCall,
     { pretty: '  ' }
   )
 }
