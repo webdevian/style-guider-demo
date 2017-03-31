@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>style-guider-demo</title>
+    <meta name="description" content=""/>
+    <link rel="canonical" href=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="style-guider-demo"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:site_name" content="style-guider-demo"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="twitter:url" content=""/>
+    <meta property="twitter:site" content="@twitter"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:title" content="style-guider-demo"/>
+    <meta property="twitter:description" content=""/>
+    <meta itemprop="name" content="style-guider-demo"/>
+    <meta itemprop="description" content=""/>
+    <link rel="stylesheet" href="docs/css/docs.css?=56cu6rd">
+    <script>var components = {"accessibility":{"name":"accessibility","title":"Accessibility","docs":["<blockquote>Accessibility is the degree to which anyone can access and use a website using any web browsing technology. <cite>Royal National Institute of Blind People</cite></blockquote>","Our public-facing applications must be built to work on all devices, browsers and with assistive technologies. A lot of effort has been made to ensure that the components in this framework are accessible. Such as:"],"demo":"<ul><li>Text and backgrounds have sufficient contrast ratios so text is legible.</li><li>Clickable elements are clear and uniform, so users know what they can click.</li><li>ARIA landmark roles and html5 elements help browsers define types of content.</li><li>Focus states on all elements so that interactions can be operated with a keyboard or screen reader.</li><li>Javascript features have a fallback for when javascript is not enabled.</li></ul><p><a href=\"http://a11yproject.com/checklist.html\" target=\"_blank\">This checklist from the A11Y Project</a> is a good guide to all the core web accessibility principles.</p>","demoCall":"<ul><li>Text and backgrounds have sufficient contrast ratios so text is legible.</li><li>Clickable elements are clear and uniform, so users know what they can click.</li><li>ARIA landmark roles and html5 elements help browsers define types of content.</li><li>Focus states on all elements so that interactions can be operated with a keyboard or screen reader.</li><li>Javascript features have a fallback for when javascript is not enabled.</li></ul><p><a href=\"http://a11yproject.com/checklist.html\" target=\"_blank\">This checklist from the A11Y Project</a> is a good guide to all the core web accessibility principles.</p>"},"colour":{"name":"colour","title":"Colours","docs":["There are a variety of colours to choose from for digital interfaces.","There are not pre-defined CSS classes for each colour, but they are available as SASS variables to use in your own extended styles."],"demo":"<h3>Primary Colours</h3><div class=\"swatches big\"><span class=\"red\">Red</span><span class=\"blue\">Blue</span></div><h3>Secondary Colours</h3><div class=\"swatches small\"><span class=\"claret\">Claret</span><span class=\"flame\">Flame</span><span class=\"carrot\">Carrot</span><span class=\"buttercup\">Buttercup</span><span class=\"sunglow\">Sunglow</span><span class=\"malibu\">Malibu</span><span class=\"bermuda\">Bermuda</span><span class=\"java\">Java</span><span class=\"verdun\">Verdun</span><span class=\"grey\">Grey</span></div>","demoCall":"<h3>Primary Colours</h3><div class=\"swatches big\"><span class=\"red\">Red</span><span class=\"blue\">Blue</span></div><h3>Secondary Colours</h3><div class=\"swatches small\"><span class=\"claret\">Claret</span><span class=\"flame\">Flame</span><span class=\"carrot\">Carrot</span><span class=\"buttercup\">Buttercup</span><span class=\"sunglow\">Sunglow</span><span class=\"malibu\">Malibu</span><span class=\"bermuda\">Bermuda</span><span class=\"java\">Java</span><span class=\"verdun\">Verdun</span><span class=\"grey\">Grey</span></div>"},"typography":{"name":"typography","title":"Typography","docs":["All text uses Helvetica Neue with a fallback to Helvetica or Arial. Body text is legible with generous line-spacing and the font-size adapts to the screen size to ensure readability. Paragraphs have a bottom margin to match a vertical rhythm.","Paragraphs also have a maximum width of about 700px, so that long lines don't become too difficult to read."]},"header":{"name":"header","title":"Headers","docs":["Headers use a lighter font-weight. They should be used in cascading order to denote the importance of a section's contents."],"demo":"<h1>h1. This is a very large header</h1><h2>h2. This is a large header</h2><h3>h3. This is a medium header</h3><h4>h4. This is a moderate header</h4><h5>h5. This is a small header</h5><h6>h6. This is a tiny header</h6>","demoCall":"<h1>h1. This is a very large header</h1><h2>h2. This is a large header</h2><h3>h3. This is a medium header</h3><h4>h4. This is a moderate header</h4><h5>h5. This is a small header</h5><h6>h6. This is a tiny header</h6>"},"bold-header":{"name":"bold-header","title":"Bold Headers","docs":["Sometimes a bolder header might be required for more emphasis. This can be done by adding the <code>.heavy</code> class. If this option is used it should be done consistently throughout the application or website.","By inserting a <code>small</code> element into a header Foundation will scale the header font size down for an inline element, allowing you to use this for subtitles or other secondary header text."],"demo":"<h1 class=\"heavy\">h1. This is a very large header</h1><h2 class=\"heavy\">h2. This is a large header</h2><h3 class=\"heavy\">h3. This is a medium heade</h3><h4 class=\"heavy\">h4. This is a moderate header</h4><h5 class=\"heavy\">h5. This is a small header</h5><h6 class=\"heavy\">h6. This is a tiny header</h6>","demoCall":"<h1 class=\"heavy\">h1. This is a very large header</h1><h2 class=\"heavy\">h2. This is a large header</h2><h3 class=\"heavy\">h3. This is a medium heade</h3><h4 class=\"heavy\">h4. This is a moderate header</h4><h5 class=\"heavy\">h5. This is a small header</h5><h6 class=\"heavy\">h6. This is a tiny header</h6>"},"sub-header":{"name":"sub-header","title":"Sub Headers","docs":["By inserting a <code>small</code> element into a header Foundation will scale the header font size down for an inline element, allowing you to use this for subtitles or other secondary header text."],"demo":"<h4>This is a medium header <small>with a subheader</small></h4>","demoCall":"<h4>This is a medium header <small>with a subheader</small></h4>"},"link":{"name":"link","title":"Links","docs":["Text links should be intuitive, so that users know they can click or tap on them. Inline links are <a href=\"#\">displayed in red</a> with an underline on hover"]},"list":{"name":"list","title":"Lists","docs":["Lists are useful for a collection of text items and can be numbered or nested too."],"demo":"<p>This is what an un-ordered list looks like:</p><ul><li>A list item</li><li>Another list item</li><li>Another one</li><li>Ok, last one</li></ul><p>A list following a paragraph has reduced spacing, so that a paragraph can give context to a list:</p><ol><li>A list item</li><li>Another list item</li><li>Another one</li><li>Ok, last one</li></ol>","demoCall":"<p>This is what an un-ordered list looks like:</p><ul><li>A list item</li><li>Another list item</li><li>Another one</li><li>Ok, last one</li></ul><p>A list following a paragraph has reduced spacing, so that a paragraph can give context to a list:</p><ol><li>A list item</li><li>Another list item</li><li>Another one</li><li>Ok, last one</li></ol>"},"definition-list":{"name":"definition-list","title":"Definition Lists","docs":["A definition list <code>&lt;dl&gt;</code> is used to display name-value pairs, like FAQs. Each term <code>&lt;dt&gt;</code> is paired with one or more definitions <code>&lt;dd&gt;</code>."],"demo":"<dl><dt>A Definition Term</dt><dd>The definition, styled just like a paragraph, but with clever spacing between definitions.</dd><dt>Why should I use this style guide?</dt><dd>Because it looks good</dd></dl>","demoCall":"<dl><dt>A Definition Term</dt><dd>The definition, styled just like a paragraph, but with clever spacing between definitions.</dd><dt>Why should I use this style guide?</dt><dd>Because it looks good</dd></dl>"},"blockquote":{"name":"blockquote","title":"Blockquote","docs":["Sometimes other people say nice things, and we may want to mention those things with a quote that clearly shows who said it. Use a <code>&lt;cite&gt;</code> tag for the byline."],"demo":"<blockquote>I had a really good experience using this product.<cite>A. Customer</cite></blockquote>","demoCall":"<blockquote>I had a really good experience using this product.<cite>A. Customer</cite></blockquote>"},"divider":{"name":"divider","title":"Dividers","docs":["Use <code>&lt;hr&gt;</code> dividers to define thematic breaks between paragraphs or other page elements"]},"form":{"name":"form","title":"Forms","docs":["Forms are key in interacting with users and gleaning information from them. Forms must be intuitive and accessible to stop users getting frustrated and leaving before finishing."],"mixinPath":null,"scssPath":null,"jsPath":null},"input":{"name":"input","title":"Text Inputs","docs":["These input types create a single line text field: <code>text</code>, <code>date</code>, <code>datetime</code>, <code>datetime-local</code>, <code>email</code>, <code>month</code>, <code>number</code>, <code>password</code>, <code>search</code>, <code>tel</code>, <code>time</code>, <code>url</code>, and <code>week</code>","Using specific input types for different data formats can help improve usability. For example, using a <code>tel</code> input will open a numpad keyboard on mobile devices, making it easier for the user to input a phone number.","All form inputs should have a clear label, that describes what you want the user to enter. Clicking a label should focus on the form field. This is achieved by linking label elements to input elements with a <code>for</code> attribute.","Although popular in modern websites, inline placeholders should not be used because they disappear as soon as a user starts typing, and the user may think there is already text input. Instead an example or hint should be placed beneath the input."],"breakout":false,"inline":true,"block":true,"attributes":true,"demo":"<div><label for=\"example-text\">An example text field</label><input type=\"text\" id=\"example-text\" name=\"example-text\"/><span>A helper or example for this field</span></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"type":{"enum":["text","date","datetime","datetime-local","email","month","number","password","search","tel","time","url"," week"],"default":"text","description":"The input type attribute"},"name":{"type":"string","default":"my-input","description":"The name attribute of the input"},"value":{"type":"string","default":null,"description":"The default value of the field"},"id":{"type":"string","default":"my-input","description":"The id of the input"},"label":{"type":"string","default":"My Input","description":"The label text"},"helperBelow":{"type":"string","default":"Some helpful advice for this field","description":"Helper that appears below the field"},"helperAbove":{"type":"string","default":"More helpful advice for this field","description":"Helper the appears above the field"},"error":{"type":"string","default":null,"description":"Error message string, marks whole field as errorneous"}},"demoCall":"<div><label for=\"example-text\">An example text field</label><input type=\"text\" id=\"example-text\" name=\"example-text\"/><span>A helper or example for this field</span></div>"},"textarea":{"name":"textarea","title":"Text Area","docs":["Text areas are used for multi-line text input, for example on a comments form. A text area can also be given a helper label. The text area should be given an appropriate amount of rows (with the <code>rows</code> attribute) for the text that is expected to be entered."],"breakout":false,"inline":true,"block":"Default Value","attributes":true,"demo":"<div><label for=\"example-textarea\">Example Text Area</label><span>Some helper text</span><textarea id=\"example-textarea\" name=\"example-textarea\" rows=\"3\"></textarea></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"name":{"type":"string","default":"my-input","description":"The name attribute of the text area"},"id":{"type":"string","default":"my-input","description":"The id of the text area"},"label":{"type":"string","default":"My Input","description":"The label text"},"rows":{"type":"number","default":4,"description":"The number of rows"},"helperBelow":{"type":"string","default":"Some helpful advice for this field","description":"Helper that appears below the text area"},"helperAbove":{"type":"string","default":"More helpful advice for this field","description":"Helper the appears above the text area"},"error":{"type":"string","default":null,"description":"Error message string, marks whole field as errorneous"}},"demoCall":"<div><label for=\"example-textarea\">Example Text Area</label><span>Some helper text</span><textarea id=\"example-textarea\" name=\"example-textarea\" rows=\"3\"></textarea></div>"},"select":{"name":"select","title":"Select Menu","docs":["Use select menus to combine many choices into one dropdown menu. This is useful for saving space, small screen devices have native UI patterns for dealing with these"],"breakout":false,"inline":true,"block":true,"attributes":true,"demo":"<div><label for=\"my-input\">My Input</label><span>More helpful advice for this field</span><select id=\"my-input\" name=\"my-input\"><option value=\"1\">An Option</option><option value=\"2\" selected=\"selected\">Another Option</option><option value=\"3\">A Third Option</option></select><span>Some helpful advice for this field</span></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"name":{"type":"string","default":"my-select","description":"The name attribute of the input"},"selectedValue":{"type":"string","default":null,"description":"The default value of the field"},"id":{"type":"string","default":"my-select","description":"The id of the input"},"label":{"type":"string","default":"My Select","description":"The label text"},"helperBelow":{"type":"string","default":"Some helpful advice for this field","description":"Helper that appears below the field"},"helperAbove":{"type":"string","default":"More helpful advice for this field","description":"Helper the appears above the field"},"options":{"type":"array","default":[{"label":"An Option","value":"1"},{"label":"Another Option","value":"2"},{"label":"A Third Option","value":"3"}],"description":"Array of objects with label/value pairs"},"error":{"type":"string","default":null,"description":"Error message string, marks whole field as errorneous"}},"demoCall":"<div><label for=\"my-input\">My Input</label><span>More helpful advice for this field</span><select id=\"my-input\" name=\"my-input\"><option value=\"1\">An Option</option><option value=\"2\" selected=\"selected\">Another Option</option><option value=\"3\">A Third Option</option></select><span>Some helpful advice for this field</span></div>"},"checkbox":{"name":"checkbox","title":"Checkboxes","docs":["Use groups of checkboxes when the user may select multiple choices from a list"],"breakout":false,"inline":true,"block":false,"attributes":true,"demo":"<div><legend for=\"example-checkbox\">Example Checkbox Group</legend><span>Some helper text</span><fieldset><div><input type=\"checkbox\" id=\"example-checkbox-1\" value=\"1\" name=\"example-checkbox\"/><label for=\"example-checkbox-1\">An Option</label></div><div><input type=\"checkbox\" id=\"example-checkbox-2\" value=\"2\" name=\"example-checkbox\" checked=\"checked\"/><label for=\"example-checkbox-2\">Another Option</label></div><div><input type=\"checkbox\" id=\"example-checkbox-3\" value=\"3\" name=\"example-checkbox\"/><label for=\"example-checkbox-3\">A Third Option</label></div></fieldset></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"name":{"type":"string","default":"my-checkboxes","description":"The name attribute of the checkbox group"},"id":{"type":"string","default":"my-checkboxes","description":"The id of the checkbox-group"},"legend":{"type":"string","default":"My Checkbox Options","description":"The legend text"},"helperBelow":{"type":"string","default":"Some helpful advice for this field","description":"Helper that appears below the field"},"helperAbove":{"type":"string","default":"More helpful advice for this field","description":"Helper the appears above the field"},"options":{"type":"array","default":[{"label":"An Option","value":"1"},{"label":"Another Option","value":"2","checked":true},{"label":"A Third Option","value":"3","checked":true}],"description":"Array of objects with label/value/checked key/values"},"stack":{"type":"boolean","default":false,"description":"Display options in vertical stack?"},"error":{"type":"string","default":null,"description":"Error message string, marks whole field as errorneous"}},"demoCall":"<div><legend for=\"example-checkbox\">Example Checkbox Group</legend><span>Some helper text</span><fieldset><div><input type=\"checkbox\" id=\"example-checkbox-1\" value=\"1\" name=\"example-checkbox\"/><label for=\"example-checkbox-1\">An Option</label></div><div><input type=\"checkbox\" id=\"example-checkbox-2\" value=\"2\" name=\"example-checkbox\" checked=\"checked\"/><label for=\"example-checkbox-2\">Another Option</label></div><div><input type=\"checkbox\" id=\"example-checkbox-3\" value=\"3\" name=\"example-checkbox\"/><label for=\"example-checkbox-3\">A Third Option</label></div></fieldset></div>"},"radio":{"name":"radio","title":"Radio Buttons","docs":["Use radio buttons when the user must select just one choice"],"breakout":false,"inline":true,"block":false,"attributes":true,"demo":"<div role=\"radiogroup\"><legend for=\"my-radios\">My Radio options</legend><span>More helpful advice for this field</span><fieldset><div><input type=\"radio\" id=\"my-radios-1\" value=\"1\" name=\"my-radios\"/><label for=\"my-radios-1\">An Option</label></div><div><input type=\"radio\" id=\"my-radios-2\" value=\"2\" name=\"my-radios\"/><label for=\"my-radios-2\">Another Option</label></div><div><input type=\"radio\" id=\"my-radios-3\" value=\"3\" name=\"my-radios\"/><label for=\"my-radios-3\">A Third Option</label></div></fieldset><span>Some helpful advice for this field</span></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"name":{"type":"string","default":"my-radios","description":"The name attribute of the radio group"},"selectedValue":{"type":"string","default":null,"description":"The selected value"},"id":{"type":"string","default":"my-radios","description":"The id of the radio-group"},"legend":{"type":"string","default":"My Radio options","description":"The legend text"},"helperBelow":{"type":"string","default":"Some helpful advice for this field","description":"Helper that appears below the field"},"helperAbove":{"type":"string","default":"More helpful advice for this field","description":"Helper the appears above the field"},"options":{"type":"array","default":[{"label":"An Option","value":"1"},{"label":"Another Option","value":"2"},{"label":"A Third Option","value":"3"}],"description":"Array of objects with label/value pairs"},"stack":{"type":"boolean","default":false,"description":"Display options in vertical stack?"},"error":{"type":"string","default":null,"description":"Error message string, marks whole field as errorneous"}},"demoCall":"<div role=\"radiogroup\"><legend for=\"my-radios\">My Radio options</legend><span>More helpful advice for this field</span><fieldset><div><input type=\"radio\" id=\"my-radios-1\" value=\"1\" name=\"my-radios\"/><label for=\"my-radios-1\">An Option</label></div><div><input type=\"radio\" id=\"my-radios-2\" value=\"2\" name=\"my-radios\"/><label for=\"my-radios-2\">Another Option</label></div><div><input type=\"radio\" id=\"my-radios-3\" value=\"3\" name=\"my-radios\"/><label for=\"my-radios-3\">A Third Option</label></div></fieldset><span>Some helpful advice for this field</span></div>"},"upload":{"name":"upload","title":"File Upload","docs":["File upload inputs are inconsistent across all browsers, so we use a label mask to display it like a button. When clicked it opens up the user's file browser"],"breakout":false,"inline":true,"block":true,"attributes":true,"demo":"<div><label for=\"example-file-upload\">Upload your file</label><input type=\"file\" id=\"example-file-upload\" name=\"example-file-upload\" tabindex=\"-1\"/><label for=\"example-file-upload\" tabindex=\"0\">Upload</label></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"name":{"type":"string","default":"my-upload","description":"The name attribute of the input"},"id":{"type":"string","default":"my-upload","description":"The id of the input"},"label":{"type":"string","default":"My Upload","description":"The label text"},"buttonText":{"type":"string","default":"An Upload Button","description":"The text on the upload button"},"helperBelow":{"type":"string","default":"Some helpful advice for this field","description":"Helper that appears below the field"},"helperAbove":{"type":"string","default":"More helpful advice for this field","description":"Helper the appears above the field"},"error":{"type":"string","default":null,"description":"Error message string, marks whole field as errorneous"}},"demoCall":"<div><label for=\"example-file-upload\">Upload your file</label><input type=\"file\" id=\"example-file-upload\" name=\"example-file-upload\" tabindex=\"-1\"/><label for=\"example-file-upload\" tabindex=\"0\">Upload</label></div>"},"datepicker":{"name":"datepicker","title":"Date Picker","docs":["Inputs with an attribute of <code>data-datepicker</code> can be made more user friendly with the jQuery-ui datepicker widget. The datepicker input element is one case where a placeholder is useful, to indicate that the input must be clicked to open the calendar."],"breakout":false,"inline":true,"block":true,"attributes":true,"demo":"<div><label for=\"Example Date Picker\"></label><input type=\"date\" id=\"Example Date Picker\" name=\"example-date-picker\" data-datepicker=\"data-datepicker\" placeholder=\"Pick Date\"/></div>","mixinPath":"./pug/components/_input.pug","scssPath":null,"jsPath":null,"demoCall":"<div><label for=\"Example Date Picker\"></label><input type=\"date\" id=\"Example Date Picker\" name=\"example-date-picker\" data-datepicker=\"data-datepicker\" placeholder=\"Pick Date\"/></div>"},"errors":{"name":"errors","title":"Form Errors","docs":["User input needs to be validated to check for erroneous or malicious data. To improve usability, human-friendly error messages should be shown on invalid fields.","In-line validation (inline feedback as the user is filling out the form) is much more effective than post-submission feedback.","Error messages can be added to the DOM by javascript or into the source html server-side. A wrapper with class <code>.has-error</code> around an input and label denotes an error. A span with class <code>.error-message</code> should show the specific error."],"breakout":false,"inline":true,"block":true,"attributes":true,"demo":"<div class=\"has-error\"><label for=\"example-text-error\">Text field with an error</label><input type=\"text\" id=\"example-text-error\" name=\"example-text-error\" value=\"Some erroneous text\"/><span>Helper text</span><span class=\"error-message\">This field is too long</span></div>","mixinPath":"./pug/components/_input.pug","scssPath":null,"jsPath":null,"demoCall":"<div class=\"has-error\"><label for=\"example-text-error\">Text field with an error</label><input type=\"text\" id=\"example-text-error\" name=\"example-text-error\" value=\"Some erroneous text\"/><span>Helper text</span><span class=\"error-message\">This field is too long</span></div>"},"callout":{"name":"callout","title":"Error Callout","docs":["A callout should be included at the top of the form to indicate that there are errors after form submission. It should indicate which fields have errors to help the user amend them"],"breakout":false,"inline":false,"block":true,"attributes":false,"demo":"<div class=\"callout\"><h5>There were some problems with your form</h5><p><a href=\"#example-text-error\">Example Field</a> - Must be less than 30 characters</p><p><a href=\"#example-text-error\">Another Field</a> - Must be a specific type of data</p></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"type":{"enum":["default","alert","warning"],"default":null,"description":"Type of callout, defines colour scheme"},"header":{"type":"string","default":"There were some problems with your form","description":"The header of the callout"},"errors":{"type":"array","default":[{"label":"Example Field","id":"example-text-error","message":"Must be less than 30 characters"},{"label":"Another Field","id":"example-text-error","message":"Must be a specific type of data"}],"description":"Array of objects with label/id/message pairs"}},"demoCall":"<div class=\"callout\"><h5>There were some problems with your form</h5><p><a href=\"#example-text-error\">Example Field</a> - Must be less than 30 characters</p><p><a href=\"#example-text-error\">Another Field</a> - Must be a specific type of data</p></div>"},"required":{"name":"required","title":"Required Fields","docs":["In some applications different input fields will be required or optional. For best usability, optional fields should be marked as optional (in the helper text), and required fields should be the default."],"mixinPath":null,"scssPath":null,"jsPath":null},"disabled":{"name":"disabled","title":"Disabled Fields","docs":["Some applications will need to show a field but not accept user input, or disable the submit button until all required fields are completed. The <code>disabled</code> attribute stops input and styles it to makes it clear that inputs can not be modified by the user."],"demo":"<div><label for=\"example-text-disabled\">An example disabled text field</label><input type=\"text\" id=\"example-text-disabled\" name=\"example-text-disabled\" value=\"User cannot edit this text\" disabled=\"disabled\"/><span>You cannot edit this field</span></div>","mixinPath":"./pug/components/_input.pug","scssPath":null,"jsPath":null,"demoCall":"<div><label for=\"example-text-disabled\">An example disabled text field</label><input type=\"text\" id=\"example-text-disabled\" name=\"example-text-disabled\" value=\"User cannot edit this text\" disabled=\"disabled\"/><span>You cannot edit this field</span></div>"},"button":{"name":"button","title":"Buttons","docs":["Buttons are for users to trigger an actions, the text on the button should make it clear what the action will do. The colour of the button can also denote whether an action is constructive, destructive etc.","Buttons in a row are spaced apart so that a user won't press the wrong one by mistake.","Links or submit inputs can be styled as buttons with the <code>.button</code> class.","<h4>Create new order?</h4>","<a class=\"button small secondary\" href=\"#\">Cancel</a> <a class=\"button\" href=\"#\">Create order</a>","Button labels should be clear so that the user knows what action will happen when they click it. Constructive actions (Yes, Confirm, Save etc) should go on the right and be blue. Destructive actions (Delete etc) should be red. Back-tracking actions (Cancel, Undo, No) should be grey and on the left, and could be smaller.","Colour of buttons can be modified by adding a <code>.alert</code> or <code>.secondary</code> class. The size of buttons can be modified with <code>.small</code>, <code>.tiny</code>, <code>.large</code> and <code>.expanded</code> classes."],"demo":"<div><a class=\"button\" href=\"#\">Basic Button</a><a class=\"alert button\" href=\"#\">Alert Btn</a><a class=\"secondary button\" href=\"#\">Secondary Btn</a></div><div><a class=\"secondary small button\" href=\"#\">A Small Btn</a><a class=\"tiny button alert\" href=\"#\">An even smaller button</a><a class=\"large button\" href=\"#\">A large button</a></div><div><a class=\"small expanded button\" href=\"#\">An expanded button</a></div>","mixinPath":null,"scssPath":null,"jsPath":null,"demoCall":"<div><a class=\"button\" href=\"#\">Basic Button</a><a class=\"alert button\" href=\"#\">Alert Btn</a><a class=\"secondary button\" href=\"#\">Secondary Btn</a></div><div><a class=\"secondary small button\" href=\"#\">A Small Btn</a><a class=\"tiny button alert\" href=\"#\">An even smaller button</a><a class=\"large button\" href=\"#\">A large button</a></div><div><a class=\"small expanded button\" href=\"#\">An expanded button</a></div>"},"submit":{"name":"submit","title":"Submit Button","docs":["A mixin for inputs with a type of <code>hidden</code> has been included"],"breakout":false,"inline":true,"block":false,"attributes":true,"mixinPath":null,"scssPath":null,"jsPath":null,"demo":"<input class=\"button\" type=\"submit\" value=\"Submit\"/><br/>","params":{"value":{"type":"string","default":"Submit","description":"The label on the submit button"}},"demoCall":"<input class=\"button\" type=\"submit\" value=\"Submit\"/><br/>"},"hidden":{"name":"hidden","title":"Hidden Inputs","docs":["A mixin for inputs with a type of <code>hidden</code> has been included"],"breakout":false,"inline":true,"block":false,"attributes":true,"mixinPath":null,"scssPath":null,"jsPath":null,"demo":"<!-- No demo-->","params":{"name":{"type":"string","default":"my-input","description":"The name attribute of the input"},"value":{"type":"string","default":null,"description":"The default value of the field"}},"demoCall":"<!-- No demo-->"},"ui-elements":{"name":"ui-elements","title":"Custom UI Elements"},"layout":{"name":"layout","title":"Layout","demo":"<div class=\"content\"><p>There are 3 main layout components: Full-width, two-thirds and one-third. This <code>.content</code> column is two-thirds.</p><p>A <code>.full</code> element stretches across the width of the screen.</p><p>On small screens all three if of these components are full-width and stack on top of each other</p><h4>Helper layout classes</h4><p><code>.half</code>, <code>.third</code>, <code>.quarter</code> and <code>.sixth</code> are available for quick column width setting.</p><h4>Custom column layouts</h4><p>Columns should be implemented using Foundation's sass mixins - <a href=\"http://foundation.zurb.com/sites/docs/grid.html#building-semantically\" target=\"_blank\">see more details here</a>. There is also a useful grid-columns mixin in `scss/_mixins.scss`, see the documentation on that for more info</p></div><div class=\"sidebar\"><h3>Sidebar</h3><p>This <code>.sidebar</code> element is one third width.</p></div>","demoCall":"<div class=\"content\"><p>There are 3 main layout components: Full-width, two-thirds and one-third. This <code>.content</code> column is two-thirds.</p><p>A <code>.full</code> element stretches across the width of the screen.</p><p>On small screens all three if of these components are full-width and stack on top of each other</p><h4>Helper layout classes</h4><p><code>.half</code>, <code>.third</code>, <code>.quarter</code> and <code>.sixth</code> are available for quick column width setting.</p><h4>Custom column layouts</h4><p>Columns should be implemented using Foundation's sass mixins - <a href=\"http://foundation.zurb.com/sites/docs/grid.html#building-semantically\" target=\"_blank\">see more details here</a>. There is also a useful grid-columns mixin in `scss/_mixins.scss`, see the documentation on that for more info</p></div><div class=\"sidebar\"><h3>Sidebar</h3><p>This <code>.sidebar</code> element is one third width.</p></div>"},"table":{"name":"table","title":"Tables","docs":["Tables are used for showing tabular data. A few simple style tweaks make tables much easier to read. Adding a class of <code>.hover</code> makes rows highlight on hover.","Adding a class of <code>.stack</code> to a table makes it stack up on small screens for a cleaner layout."],"demo":"<table class=\"stack hover\"><thead><tr><th width=\"200\">Table Header</th><th>Another Table Header</th><th>Table Header</th><th>Table Header</th></tr></thead><tbody><tr><td>Content Goes Here</td><td>This is longer content Donec id elit non mi porta gravida at eget metus.</td><td>Content Goes Here</td><td><a class=\"button small\" href=\"\">A Button</a></td></tr><tr><td>Content Goes Here</td><td>This is longer Content Donec id elit non mi porta gravida at eget metus.</td><td></td><td>Content Goes Here</td></tr><tr><td>Content Goes Here</td><td>This is longer Content Donec id elit non mi porta gravida at eget metus.</td><td>Content Goes Here</td><td>Content Goes Here</td></tr></tbody></table>","demoCall":"<table class=\"stack hover\"><thead><tr><th width=\"200\">Table Header</th><th>Another Table Header</th><th>Table Header</th><th>Table Header</th></tr></thead><tbody><tr><td>Content Goes Here</td><td>This is longer content Donec id elit non mi porta gravida at eget metus.</td><td>Content Goes Here</td><td><a class=\"button small\" href=\"\">A Button</a></td></tr><tr><td>Content Goes Here</td><td>This is longer Content Donec id elit non mi porta gravida at eget metus.</td><td></td><td>Content Goes Here</td></tr><tr><td>Content Goes Here</td><td>This is longer Content Donec id elit non mi porta gravida at eget metus.</td><td>Content Goes Here</td><td>Content Goes Here</td></tr></tbody></table>"},"top-menu":{"name":"top-menu","title":"Main Menu","docs":["On applications with multi-level navigation, breadcrumbs can be used to indicate which section the user is in, and help them navigate back up navigation."],"breakout":true,"inline":false,"block":false,"attributes":true,"demo":"<menu role=\"banner\"><div class=\"wrap\"><a class=\"logo-link\" href=\"#\" title=\"Home\" tabindex=\"-1\">Home</a><a class=\"menu-link\" href=\"#\">Menu<span class=\"menu-icon\"></span></a><ul role=\"navigation\"><li><a href=\"#\" tabindex=\"0\">Home</a></li><li class=\"has-dropdown\"><a href=\"#\" tabindex=\"0\">A dropdown Menu</a><ul role=\"menu\"><li><a href=\"#\" role=\"menuitem\">Menu Item 1</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 2</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 3</a></li></ul></li><li class=\"has-dropdown active\"><a href=\"#\" tabindex=\"0\">Active dropdown Menu</a><ul role=\"menu\"><li><a href=\"#\" role=\"menuitem\">Menu Item 1</a></li><li class=\"active\"><a href=\"#\" role=\"menuitem\">Menu Item 2</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 3</a></li></ul></li><li class=\"has-dropdown\"><a href=\"#\" tabindex=\"0\">A dropdown Menu</a><ul role=\"menu\"><li><a href=\"#\" role=\"menuitem\">Menu Item 1</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 2</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 3</a></li></ul></li></ul></div></menu>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"items":{"type":"array","description":"Multi-dimensional array of items, links and children","default":[{"label":"Home","link":"#"},{"label":"A dropdown Menu","children":[{"label":"Menu Item 1","link":"#"},{"label":"Menu Item 2","link":"#"},{"label":"Menu Item 3","link":"#"}]},{"label":"Active dropdown Menu","active":true,"children":[{"label":"Menu Item 1","link":"#"},{"label":"Menu Item 2","link":"#","active":true},{"label":"Menu Item 3","link":"#"}]},{"label":"A dropdown Menu","children":[{"label":"Menu Item 1","link":"#"},{"label":"Menu Item 2","link":"#"},{"label":"Menu Item 3","link":"#"}]}]},"logo":{"type":"boolean","default":true,"description":"Should the logo be included in the menu"},"logoLink":{"type":"string","default":"#","description":"Link when clicking on logo"},"icon":{"type":"boolean","default":true,"description":"Should the hamburger menu icon be shown on mobile"},"linkText":{"type":"string","default":"Menu","description":"Text for mobile menu link"}},"demoCall":"<menu role=\"banner\"><div class=\"wrap\"><a class=\"logo-link\" href=\"#\" title=\"Home\" tabindex=\"-1\">Home</a><a class=\"menu-link\" href=\"#\">Menu<span class=\"menu-icon\"></span></a><ul role=\"navigation\"><li><a href=\"#\" tabindex=\"0\">Home</a></li><li class=\"has-dropdown\"><a href=\"#\" tabindex=\"0\">A dropdown Menu</a><ul role=\"menu\"><li><a href=\"#\" role=\"menuitem\">Menu Item 1</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 2</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 3</a></li></ul></li><li class=\"has-dropdown active\"><a href=\"#\" tabindex=\"0\">Active dropdown Menu</a><ul role=\"menu\"><li><a href=\"#\" role=\"menuitem\">Menu Item 1</a></li><li class=\"active\"><a href=\"#\" role=\"menuitem\">Menu Item 2</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 3</a></li></ul></li><li class=\"has-dropdown\"><a href=\"#\" tabindex=\"0\">A dropdown Menu</a><ul role=\"menu\"><li><a href=\"#\" role=\"menuitem\">Menu Item 1</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 2</a></li><li><a href=\"#\" role=\"menuitem\">Menu Item 3</a></li></ul></li></ul></div></menu>"},"hero":{"name":"hero","title":"Hero Image","docs":["A hero image can sit beneath the menu and spans the full width of the screen.","Using a class of <code>.slim</code> squeezes the image to take up less vertical space. This is more appropriate for non-home pages.","Using a class of <code>.outline</code> adds an oval cutout overlay to the image. Be sure to test any images on all screen sizes to make sure important focal points are not cropped"],"breakout":true,"inline":false,"block":false,"attributes":false,"demo":"<div class=\"hero\"><img src=\"https://unsplash.it/1200/400/?random\" alt=\"A hero image\"/></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"src":{"type":"string","default":"https://unsplash.it/1200/400/?random","description":"The URL of the image"},"alt":{"type":"string","default":"A hero image","description":"The alt text of the image"},"slim":{"type":"boolean","default":false,"description":"Make the hero image thinner"},"outline":{"type":"boolean","default":false,"description":"Put an oval outline over the image"}},"demoCall":"<div class=\"hero\"><img src=\"https://unsplash.it/1200/400/?random\" alt=\"A hero image\"/></div>"},"alert":{"name":"alert","title":"Alert Message","docs":["Alert messages can be displayed above or below the menu &amp; hero for urgent messages to catch the user's attention.","Alert messages can be made dismissable by adding a <code>.close</code> span."],"breakout":true,"inline":false,"block":"We’re recruiting! #[a(href='#') Click here] to discover our fantastic career opportunities and start your journey today","attributes":false,"demo":"<section class=\"message alert\" role=\"status\"><p>We’re recruiting! <a href=\"#\">Click here</a> to discover our fantastic career opportunities and start your journey today</p></section>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"type":{"enum":["default","alert","warning"],"default":"alert","description":"The type of message, determines colour scheme"},"close":{"type":"boolean","default":false,"description":"Should a close button be shown"}},"demoCall":"<section class=\"message alert\" role=\"status\"><p>We’re recruiting! <a href=\"#\">Click here</a> to discover our fantastic career opportunities and start your journey today</p></section>"},"sub-menu":{"name":"sub-menu","title":"Sub-menu","docs":["The submenu component can be used to help users navigate between pages or screens within the current section.","Active menu items (the page the user is currently on) should be given the <code>.active</code> class to highlight them"],"breakout":true,"inline":false,"block":false,"attributes":false,"demo":"<nav class=\"sub-menu\"><ul><li><a href=\"#\">Menu Item 1</a></li><li class=\"active\"><a href=\"#\">Active Menu Item</a></li><li><a href=\"#\">Menu Item 3</a></li></ul></nav>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"items":{"type":"array","description":"Array of objects with label/link strings and active boolean","default":[{"label":"Menu Item 1","link":"#"},{"label":"Active Menu Item","link":"#","active":true},{"label":"Menu Item 3","link":"#"}]}},"demoCall":"<nav class=\"sub-menu\"><ul><li><a href=\"#\">Menu Item 1</a></li><li class=\"active\"><a href=\"#\">Active Menu Item</a></li><li><a href=\"#\">Menu Item 3</a></li></ul></nav>"},"quick-links":{"name":"quick-links","title":"Quick Links","docs":["An eye-catching navigation with big icons can be used for directing users to the most common pages and actions of a website or application.","The links on the menu should be consistent throughout the application to help users learn the pattern."],"breakout":true,"inline":false,"block":false,"attributes":false,"demo":"<nav class=\"quick\"><ul><li class=\"tablet\"><a href=\"#\">Products</a></li><li class=\"van\"><a href=\"#\">Services</a></li><li class=\"map\"><a href=\"#\">Reviews</a></li><li class=\"box\"><a href=\"#\">Case Studies</a></li><li class=\"laptop\"><a href=\"#\">Login</a></li></ul></nav><main><div class=\"content\"><h4>Varying number of links</h4><p>The default amount of links in the quick link bar should be 5. If you need to have 4 or 6 link the classes <code>.four</code> and <code>.six</code> should be used to neatly arrange the spacing.</p><h4>Icons</h4><p>Icons are added to links with a class, the 5 icons shown here are using <code>.tablet</code>, <code>.van</code>, <code>.map</code>, <code>.box</code> and <code>.laptop</code>. To add new icons you will need to define the <code>background-image: url()</code> with your own class</p></div><div class=\"sidebar no-bottom-pad\"><h4>Vertical quick links</h4><p>Quick links can be displayed vertically (for use in sidebars etc) by adding the <code>.vertical</code> class. On small devices, vertical quick links are dispayed the same as horizontal.</p><nav class=\"quick vertical \"><ul><li class=\"tablet\"><a href=\"#\">Products</a></li><li class=\"van\"><a href=\"#\">Services</a></li><li class=\"map\"><a href=\"#\">Reviews</a></li><li class=\"box\"><a href=\"#\">Case Studies</a></li><li class=\"laptop\"><a href=\"#\">Login</a></li></ul></nav></div></main>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"items":{"type":"array","description":"array of objects with label/link/icon strings. The length of the array is counted to apply .four or .six class if necessary","default":[{"label":"Products","link":"#","icon":"tablet"},{"label":"Services","link":"#","icon":"van"},{"label":"Reviews","link":"#","icon":"map"},{"label":"Case Studies","link":"#","icon":"box"},{"label":"Log In","link":"#","icon":"laptop"}]},"vertical":{"type":"boolean","description":"Vertical mode","default":false},"four":{"type":"boolean","description":"Add four class (Auto-detected in js)","default":false},"six":{"type":"boolean","description":"Add six class (Auto-detected in js)","default":false}},"demoCall":"<nav class=\"quick\"><ul><li class=\"tablet\"><a href=\"#\">Products</a></li><li class=\"van\"><a href=\"#\">Services</a></li><li class=\"map\"><a href=\"#\">Reviews</a></li><li class=\"box\"><a href=\"#\">Case Studies</a></li><li class=\"laptop\"><a href=\"#\">Login</a></li></ul></nav><main><div class=\"content\"><h4>Varying number of links</h4><p>The default amount of links in the quick link bar should be 5. If you need to have 4 or 6 link the classes <code>.four</code> and <code>.six</code> should be used to neatly arrange the spacing.</p><h4>Icons</h4><p>Icons are added to links with a class, the 5 icons shown here are using <code>.tablet</code>, <code>.van</code>, <code>.map</code>, <code>.box</code> and <code>.laptop</code>. To add new icons you will need to define the <code>background-image: url()</code> with your own class</p></div><div class=\"sidebar no-bottom-pad\"><h4>Vertical quick links</h4><p>Quick links can be displayed vertically (for use in sidebars etc) by adding the <code>.vertical</code> class. On small devices, vertical quick links are dispayed the same as horizontal.</p><nav class=\"quick vertical \"><ul><li class=\"tablet\"><a href=\"#\">Products</a></li><li class=\"van\"><a href=\"#\">Services</a></li><li class=\"map\"><a href=\"#\">Reviews</a></li><li class=\"box\"><a href=\"#\">Case Studies</a></li><li class=\"laptop\"><a href=\"#\">Login</a></li></ul></nav></div></main>"},"card":{"name":"card","title":"Floating Card","docs":["Floating cards can be useful for displaying single or repeating modules on a page, such as tweets or news stories. Cards fill the horizontal space they are in and stretch vertically to contain the content.","Cards can contain a <code>&lt;time&gt;</code> or a <code>&lt;span class=&quot;meta&quot;&gt;</code> element, a header, paragraphs and link. If the card has a link, the header and time should also be linked.","Cards with a class of <code>.flat</code> will have a grey background. Cards with a class of <code>.shadow</code> will have a shadow effect."],"breakout":false,"inline":true,"block":"Don't forget, you can stay updated with all our latest news by visiting our website!","attributes":false,"demo":"<div class=\"nest\"><div class=\"sidebar\"><article class=\"card\"><span class=\"meta\"></span><span class=\"meta\"><a href=\"#\" tabindex=\"-1\">12th December 16</a></span><h4><a href=\"#\">News Item Title</a></h4><p>Don't forget, you can stay updated with all our latest news by visiting our website!</p><a href=\"#\">Read more...</a></article></div><div class=\"sidebar\"><article class=\"card flat\"><span class=\"meta\"></span><span class=\"meta\"><a href=\"#\" tabindex=\"-1\">Job Title</a></span><h4><a href=\"#\">Class 1 Driver</a></h4><p>We are currently looking to recruit a driver to join the existing well established team.</p><a href=\"#\">Apply now...</a></article></div><div class=\"sidebar\"><article class=\"card shadow\"><span class=\"meta\"></span><span class=\"meta\"><a href=\"#\" tabindex=\"-1\">12th December 16</a></span><h4><a href=\"#\">News Item Title</a></h4><p>Don't forget, you can stay updated with all our latest news by visiting our website!</p><a href=\"#\">Read more...</a></article></div></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"type":{"enum":["default","flat","shadow"],"default":"default","description":"The style of the card"},"title":{"type":"string","default":"My Card Title","description":"Title of the card"},"subtitle":{"type":"string","default":"Sub-Title","description":"Subtitle of the card"},"link":{"type":"string","default":"#","description":"Link when card is clicked"},"linkLabel":{"type":"string","default":"Read more...","description":"Text of link label"}},"demoCall":"<div class=\"nest\"><div class=\"sidebar\"><article class=\"card\"><span class=\"meta\"></span><span class=\"meta\"><a href=\"#\" tabindex=\"-1\">12th December 16</a></span><h4><a href=\"#\">News Item Title</a></h4><p>Don't forget, you can stay updated with all our latest news by visiting our website!</p><a href=\"#\">Read more...</a></article></div><div class=\"sidebar\"><article class=\"card flat\"><span class=\"meta\"></span><span class=\"meta\"><a href=\"#\" tabindex=\"-1\">Job Title</a></span><h4><a href=\"#\">Class 1 Driver</a></h4><p>We are currently looking to recruit a driver to join the existing well established team.</p><a href=\"#\">Apply now...</a></article></div><div class=\"sidebar\"><article class=\"card shadow\"><span class=\"meta\"></span><span class=\"meta\"><a href=\"#\" tabindex=\"-1\">12th December 16</a></span><h4><a href=\"#\">News Item Title</a></h4><p>Don't forget, you can stay updated with all our latest news by visiting our website!</p><a href=\"#\">Read more...</a></article></div></div>"},"breadcrumbs":{"name":"breadcrumbs","title":"Breadcrumbs","docs":["On applications with multi-level navigation, breadcrumbs can be used to indicate which section the user is in, and help them navigate back up navigation."],"breakout":false,"inline":false,"block":false,"attributes":false,"demo":"<ul class=\"breadcrumbs\"><li><a href=\"#\">Home</a></li><li><a href=\"#\">Category</a></li><li><a href=\"#\">Sub-Category</a></li><li>Current</li></ul>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"items":{"type":"array","description":"Array of objects with label/link strings","default":[{"label":"Home","link":"#"},{"label":"Category","link":"#","active":true},{"label":"Sub-Category","link":"#","active":true},{"label":"Current"}]}},"demoCall":"<ul class=\"breadcrumbs\"><li><a href=\"#\">Home</a></li><li><a href=\"#\">Category</a></li><li><a href=\"#\">Sub-Category</a></li><li>Current</li></ul>"},"pagination":{"name":"pagination","title":"Pagination","docs":["When there is too much content for one page, we should make it easy for users to browse, skim or skip between pages. On small screens only the next and previous buttons are shown."],"breakout":false,"inline":false,"block":false,"attributes":true,"demo":"<div><ul class=\"pagination\" role=\"navigation\" aria-label=\"Pagination\"><li class=\"pagination-previous\"><a href=\"#10\">Previous <span class=\"show-for-sr\">page</span></a></li><li><a href=\"#\" aria-label=\"Page 1\">1</a></li><li><a href=\"#10\" aria-label=\"Page 2\">2</a></li><li class=\"current\"><span class=\"show-for-sr\">You're on page</span> 3</li><li><a href=\"#30\" aria-label=\"Page 4\">4</a></li><li class=\"ellipsis\" aria-hidden=\"true\"></li><li><a href=\"#120\" aria-label=\"Page 13\">13</a></li><li><a href=\"#130\" aria-label=\"Page 14\">14</a></li><li class=\"pagination-next\"><a href=\"#30\">Next <span class=\"show-for-sr\">page</span></a></li></ul></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"pages":{"type":"array","default":[{"page":1,"link":"#"},{"page":2,"link":"#10"},{"page":3,"link":"#20"},{"page":4,"link":"#30"},{"page":5,"link":"#40"},{"page":6,"link":"#50"},{"page":7,"link":"#60"},{"page":8,"link":"#70"},{"page":9,"link":"#80"},{"page":10,"link":"#90"},{"page":11,"link":"#100"},{"page":12,"link":"#110"},{"page":13,"link":"#120"},{"page":14,"link":"#130"}],"description":"Array of objects with page number and link. This should include ALL pages, the mixin will remove ones that aren't needed"},"current":{"type":"number","default":"6","description":"The current page"},"relativeNumber":{"type":"number","default":"1","description":"Number of pages to show each side of current page"},"absoluteNumber":{"type":"number","default":"2","description":"Number of pages to show at start and end"}},"demoCall":"<div><ul class=\"pagination\" role=\"navigation\" aria-label=\"Pagination\"><li class=\"pagination-previous\"><a href=\"#10\">Previous <span class=\"show-for-sr\">page</span></a></li><li><a href=\"#\" aria-label=\"Page 1\">1</a></li><li><a href=\"#10\" aria-label=\"Page 2\">2</a></li><li class=\"current\"><span class=\"show-for-sr\">You're on page</span> 3</li><li><a href=\"#30\" aria-label=\"Page 4\">4</a></li><li class=\"ellipsis\" aria-hidden=\"true\"></li><li><a href=\"#120\" aria-label=\"Page 13\">13</a></li><li><a href=\"#130\" aria-label=\"Page 14\">14</a></li><li class=\"pagination-next\"><a href=\"#30\">Next <span class=\"show-for-sr\">page</span></a></li></ul></div>"},"tab":{"name":"tab","title":"Tabs","docs":["To save on-screen space we can use tabbed content to alternate between views within the same context, whilst staying on the same page."],"breakout":false,"inline":false,"block":"h3 This is a tab\n  p Some tab content","attributes":false,"demo":"<div class=\"tabs\"><ul role=\"tablist\"><li><a role=\"tab\" href=\"#tab-1\" tabindex=\"0\" data-tab=\"1\">Tab 1</a></li><li class=\"active\"><a role=\"tab\" href=\"#tab-2\" tabindex=\"0\" data-tab=\"2\">Tab 2</a></li><li><a role=\"tab\" href=\"#tab-3\" tabindex=\"0\" data-tab=\"3\">Tab 3</a></li><li><a role=\"tab\" href=\"#tab-4\" tabindex=\"0\" data-tab=\"4\">Tab 4</a></li></ul><div class=\"panel\" role=\"tabpanel\" id=\"tab-1\" data-tab=\"1\"><h2>This is tab 1</h2><p>Some tab content</p></div><div class=\"panel active\" role=\"tabpanel\" id=\"tab-2\" data-tab=\"2\"><h2>This is tab 2</h2><p>Some tab content</p></div><div class=\"panel\" role=\"tabpanel\" id=\"tab-3\" data-tab=\"3\"><h2>This is tab 3</h2><p>Some tab content</p></div><div class=\"panel\" role=\"tabpanel\" id=\"tab-4\" data-tab=\"4\"><h2>This is tab 4</h2><p>Some tab content</p></div></div>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"id":{"type":"string","default":"1","description":"The id of the tab, must correspond to tab-list id"},"active":{"type":"boolean","default":false,"description":"Is the tab active"}},"demoCall":"<div class=\"tabs\"><ul role=\"tablist\"><li><a role=\"tab\" href=\"#tab-1\" tabindex=\"0\" data-tab=\"1\">Tab 1</a></li><li class=\"active\"><a role=\"tab\" href=\"#tab-2\" tabindex=\"0\" data-tab=\"2\">Tab 2</a></li><li><a role=\"tab\" href=\"#tab-3\" tabindex=\"0\" data-tab=\"3\">Tab 3</a></li><li><a role=\"tab\" href=\"#tab-4\" tabindex=\"0\" data-tab=\"4\">Tab 4</a></li></ul><div class=\"panel\" role=\"tabpanel\" id=\"tab-1\" data-tab=\"1\"><h2>This is tab 1</h2><p>Some tab content</p></div><div class=\"panel active\" role=\"tabpanel\" id=\"tab-2\" data-tab=\"2\"><h2>This is tab 2</h2><p>Some tab content</p></div><div class=\"panel\" role=\"tabpanel\" id=\"tab-3\" data-tab=\"3\"><h2>This is tab 3</h2><p>Some tab content</p></div><div class=\"panel\" role=\"tabpanel\" id=\"tab-4\" data-tab=\"4\"><h2>This is tab 4</h2><p>Some tab content</p></div></div>"},"progress":{"name":"progress","title":"Progress Bar","docs":["A progress bar can be used to give an indication to users of how far through their wait they are. The <code>&lt;progress&gt;</code> element is used and the progress is set with the <code>value</code> and <code>max</code> attributes. The percentage can be shown in-line by adding the <code>.show-percent</code> class."],"demo":"<progress value=\"30\" max=\"100\"></progress><progress class=\"show-percent\" value=\"80\" max=\"100\"></progress><progress class=\"show-percent\" value=\"55\" max=\"100\"></progress>","demoCall":"<progress value=\"30\" max=\"100\"></progress><progress class=\"show-percent\" value=\"80\" max=\"100\"></progress><progress class=\"show-percent\" value=\"55\" max=\"100\"></progress>"},"login":{"name":"login","title":"Login Screen","docs":["The login screen can be used inline (within another page) or floated alone on a full page.","Users should be allowed to log in with their email address. If this is not technically possible, a link to instructions on how to find their username/user id etc should be provided underneath the relevant field.","No mixin / sample code is provided for this element because there are too many variables. Check the <code>docs.pug</code> source code for this example."],"breakout":true,"demo":"<div class=\"login-page\"><form class=\"login\" action=\"#\" method=\"post\"><h1>Login to My App</h1><div><label for=\"email\">Your email address:</label><input type=\"email\" id=\"email\" name=\"email\"/></div><div><label for=\"password\">Password:</label><input type=\"text\" id=\"password\" name=\"password\"/><span><a href=\"#\">Forgotten your password?</a></span></div><div><a class=\"login-go\" href=\"#\">Login</a></div><div class=\"login-signup\"><p>Don't have an account? <a href=\"#\">Sign Up</a></p></div></form></div>","mixinPath":"./pug/components/_input.pug","demoCall":"<div class=\"login-page\"><form class=\"login\" action=\"#\" method=\"post\"><h1>Login to My App</h1><div><label for=\"email\">Your email address:</label><input type=\"email\" id=\"email\" name=\"email\"/></div><div><label for=\"password\">Password:</label><input type=\"text\" id=\"password\" name=\"password\"/><span><a href=\"#\">Forgotten your password?</a></span></div><div><a class=\"login-go\" href=\"#\">Login</a></div><div class=\"login-signup\"><p>Don't have an account? <a href=\"#\">Sign Up</a></p></div></form></div>"},"closeable":{"name":"closeable","title":"Closeable Elements","docs":["Sometimes elements need to be closeable by the user. The helper class <code>.closeable</code> can be combined with a <code>&lt;span class=&quot;close&quot;&gt;Close&lt;/span&gt;</code> element to add a close button to any element. The styles for this are an attempt at <em>one-size fits all</em> so they may need to be tweaked for each use case."],"demo":"<div class=\"nest\"><div class=\"sidebar\"><article class=\"card flat closeable\"><span class=\"meta\"></span><span class=\"meta\"><a href=\"#\" tabindex=\"-1\">12th December 16</a></span><h4><a href=\"#\">News Item Title</a></h4><span class=\"close\">Close</span><p>Don't forget, you can stay updated with all our latest news by visiting our website!</p><a href=\"#\">Read more...</a></article></div></div>","mixinPath":"./pug/components/_card.pug","demoCall":"<div class=\"nest\"><div class=\"sidebar\"><article class=\"card flat closeable\"><span class=\"meta\"></span><span class=\"meta\"><a href=\"#\" tabindex=\"-1\">12th December 16</a></span><h4><a href=\"#\">News Item Title</a></h4><span class=\"close\">Close</span><p>Don't forget, you can stay updated with all our latest news by visiting our website!</p><a href=\"#\">Read more...</a></article></div></div>"},"banner":{"name":"banner","title":"Banner Message","docs":["Banner callouts can be useful for displaying a quick eye-catching message. A logo can be included with the <code>.logo</code> class or the text can be centred with a <code>.center</code> class."],"breakout":true,"inline":false,"block":false,"attributes":false,"demo":"<section class=\"banner logo \"><div><h2>A fancy strapline</h2><h3>Call us on 0800 00 00 00</h3></div></section>","mixinPath":null,"scssPath":null,"jsPath":null,"params":{"heading":{"type":"string","default":"A fancy strapline","description":"The header of the banner"},"subHeading":{"type":"string","default":"Call us on 0800 00 00 00","description":"The sub-header of the banner"},"logo":{"type":"boolean","default":true,"description":"Should logo be included"},"center":{"type":"boolean","default":false,"description":"Should text be centered"}},"demoCall":"<section class=\"banner logo \"><div><h2>A fancy strapline</h2><h3>Call us on 0800 00 00 00</h3></div></section>"},"footer":{"name":"footer","title":"Footer","docs":["The footer sits at the bottom of the screen and can contain 3 horizontal sections. It can be used for re-iterating navigation or adding extra information and links.","No mixin / sample code is provided for this element because there are too many variables. Check the <code>docs.pug</code> source code for this example."],"breakout":true,"demo":"<footer><div class=\"top\"><div class=\"contain\"><aside><h2>Style Guider - Generate style guides</h2><p>It's really good!</p><ul><li>Call on: 0800 00 00 00 <sup>*</sup></li><li>Email: <a href=\"\">mail@style-guider-demo.com</a></li><li><small>* Calls may be recorded</small></li></ul></aside><nav><h4>Some Navigation</h4><ul><li><a href=\"#\">History</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">Awards</a></li><li><a href=\"#\">Corporate Social Responsibility</a></li><li><a href=\"#\">Careers</a></li></ul></nav><nav><h4>More Navigation</h4><ul><li><a href=\"#\">History</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">Awards</a></li><li><a href=\"#\">Corporate Social Responsibility</a></li><li><a href=\"#\">Careers</a></li></ul></nav><nav><h4>More Navigation</h4><ul><li><a href=\"#\">History</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">Awards</a></li><li><a href=\"#\">Corporate Social Responsibility</a></li><li><a href=\"#\">Careers</a></li></ul></nav><nav><h4>More Navigation</h4><ul><li><a href=\"#\">History</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">Awards</a></li><li><a href=\"#\">Corporate Social Responsibility</a></li><li><a href=\"#\">Careers</a></li></ul></nav></div></div><div class=\"middle\"><div class=\"contain\"><span class=\"copyright\">© 2017 Ian Egner</span><nav><ul><li><a href=\"#\">A text link</a></li><li><a href=\"#\">A text link</a></li><li><a href=\"#\">A text link</a></li><li><a href=\"#\">A text link</a></li><li><a href=\"#\">A text link</a></li></ul></nav></div></div><div class=\"bottom\"><p>Some Company Name, Some Address, Some Town, Some County, Some Postcode</p><p>Registered in England and Wales No. Some Company Number - VAT Registration No. Some VAT number</p></div></footer>","demoCall":"<footer><div class=\"top\"><div class=\"contain\"><aside><h2>Style Guider - Generate style guides</h2><p>It's really good!</p><ul><li>Call on: 0800 00 00 00 <sup>*</sup></li><li>Email: <a href=\"\">mail@style-guider-demo.com</a></li><li><small>* Calls may be recorded</small></li></ul></aside><nav><h4>Some Navigation</h4><ul><li><a href=\"#\">History</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">Awards</a></li><li><a href=\"#\">Corporate Social Responsibility</a></li><li><a href=\"#\">Careers</a></li></ul></nav><nav><h4>More Navigation</h4><ul><li><a href=\"#\">History</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">Awards</a></li><li><a href=\"#\">Corporate Social Responsibility</a></li><li><a href=\"#\">Careers</a></li></ul></nav><nav><h4>More Navigation</h4><ul><li><a href=\"#\">History</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">Awards</a></li><li><a href=\"#\">Corporate Social Responsibility</a></li><li><a href=\"#\">Careers</a></li></ul></nav><nav><h4>More Navigation</h4><ul><li><a href=\"#\">History</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">Awards</a></li><li><a href=\"#\">Corporate Social Responsibility</a></li><li><a href=\"#\">Careers</a></li></ul></nav></div></div><div class=\"middle\"><div class=\"contain\"><span class=\"copyright\">© 2017 Ian Egner</span><nav><ul><li><a href=\"#\">A text link</a></li><li><a href=\"#\">A text link</a></li><li><a href=\"#\">A text link</a></li><li><a href=\"#\">A text link</a></li><li><a href=\"#\">A text link</a></li></ul></nav></div></div><div class=\"bottom\"><p>Some Company Name, Some Address, Some Town, Some County, Some Postcode</p><p>Registered in England and Wales No. Some Company Number - VAT Registration No. Some VAT number</p></div></footer>"}}</script>
+  </head>
+  <body>
+    <menu role="banner">
+      <div class="wrap"><a class="menu-link" href="#"></a>
+        <ul role="navigation">
+          <li><a href="#accessibility" tabindex="0">Accessibility</a>
+          </li>
+          <li><a href="#colour" tabindex="0">Colours</a>
+          </li>
+          <li class="has-dropdown"><a href="#" tabindex="0">Typography</a>
+            <ul role="menu">
+              <li><a href="#header" role="menuitem">Headers</a></li>
+              <li><a href="#bold-header" role="menuitem">Bold Headers</a></li>
+              <li><a href="#sub-header" role="menuitem">Sub Headers</a></li>
+              <li><a href="#link" role="menuitem">Links</a></li>
+              <li><a href="#list" role="menuitem">Lists</a></li>
+              <li><a href="#definition-list" role="menuitem">Definition Lists</a></li>
+              <li><a href="#blockquote" role="menuitem">Blockquote</a></li>
+              <li><a href="#divider" role="menuitem">Dividers</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="#" tabindex="0">Forms</a>
+            <ul role="menu">
+              <li><a href="#input" role="menuitem">Text Inputs</a></li>
+              <li><a href="#textarea" role="menuitem">Text Area</a></li>
+              <li><a href="#select" role="menuitem">Select Menu</a></li>
+              <li><a href="#checkbox" role="menuitem">Checkboxes</a></li>
+              <li><a href="#radio" role="menuitem">Radio Buttons</a></li>
+              <li><a href="#upload" role="menuitem">File Upload</a></li>
+              <li><a href="#datepicker" role="menuitem">Date Picker</a></li>
+              <li><a href="#errors" role="menuitem">Form Errors</a></li>
+              <li><a href="#callout" role="menuitem">Error Callout</a></li>
+              <li><a href="#required" role="menuitem">Required Fields</a></li>
+              <li><a href="#disabled" role="menuitem">Disabled Fields</a></li>
+              <li><a href="#button" role="menuitem">Buttons</a></li>
+              <li><a href="#submit" role="menuitem">Submit Button</a></li>
+              <li><a href="#hidden" role="menuitem">Hidden Inputs</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="#" tabindex="0">Custom UI Elements</a>
+            <ul role="menu">
+              <li><a href="#layout" role="menuitem">Layout</a></li>
+              <li><a href="#table" role="menuitem">Tables</a></li>
+              <li><a href="#top-menu" role="menuitem">Main Menu</a></li>
+              <li><a href="#hero" role="menuitem">Hero Image</a></li>
+              <li><a href="#alert" role="menuitem">Alert Message</a></li>
+              <li><a href="#sub-menu" role="menuitem">Sub-menu</a></li>
+              <li><a href="#quick-links" role="menuitem">Quick Links</a></li>
+              <li><a href="#card" role="menuitem">Floating Card</a></li>
+              <li><a href="#breadcrumbs" role="menuitem">Breadcrumbs</a></li>
+              <li><a href="#pagination" role="menuitem">Pagination</a></li>
+              <li><a href="#tab" role="menuitem">Tabs</a></li>
+              <li><a href="#progress" role="menuitem">Progress Bar</a></li>
+              <li><a href="#login" role="menuitem">Login Screen</a></li>
+              <li><a href="#closeable" role="menuitem">Closeable Elements</a></li>
+              <li><a href="#banner" role="menuitem">Banner Message</a></li>
+              <li><a href="#footer" role="menuitem">Footer</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </menu>
+    <main id="content">
+      <div class="full">
+        <h1 id="root">Style Guider Demo <small>0.0.0</small></h1>
+        <p>This is the style-guider-demo CSS framework and style guide, built with <a href="https://www.npmjs.com/package/generator-style-guider" target="_blank">Style Guider</a></p>
+        <hr>
+        <div class="component">
+          <h2 id="accessibility">Accessibility</h2>
+          <p><blockquote>Accessibility is the degree to which anyone can access and use a website using any web browsing technology. <cite>Royal National Institute of Blind People</cite></blockquote></p>
+          <p>Our public-facing applications must be built to work on all devices, browsers and with assistive technologies. A lot of effort has been made to ensure that the components in this framework are accessible. Such as:</p><ul><li>Text and backgrounds have sufficient contrast ratios so text is legible.</li><li>Clickable elements are clear and uniform, so users know what they can click.</li><li>ARIA landmark roles and html5 elements help browsers define types of content.</li><li>Focus states on all elements so that interactions can be operated with a keyboard or screen reader.</li><li>Javascript features have a fallback for when javascript is not enabled.</li></ul><p><a href="http://a11yproject.com/checklist.html" target="_blank">This checklist from the A11Y Project</a> is a good guide to all the core web accessibility principles.</p>
+        </div>
+        <hr>
+        <div class="component">
+          <h2 id="colour">Colours</h2>
+          <p>There are a variety of colours to choose from for digital interfaces.</p>
+          <p>There are not pre-defined CSS classes for each colour, but they are available as SASS variables to use in your own extended styles.</p><h3>Primary Colours</h3><div class="swatches big"><span class="red">Red</span><span class="blue">Blue</span></div><h3>Secondary Colours</h3><div class="swatches small"><span class="claret">Claret</span><span class="flame">Flame</span><span class="carrot">Carrot</span><span class="buttercup">Buttercup</span><span class="sunglow">Sunglow</span><span class="malibu">Malibu</span><span class="bermuda">Bermuda</span><span class="java">Java</span><span class="verdun">Verdun</span><span class="grey">Grey</span></div>
+        </div>
+        <hr>
+        <div class="component">
+          <h2 id="typography">Typography</h2>
+          <p>All text uses Helvetica Neue with a fallback to Helvetica or Arial. Body text is legible with generous line-spacing and the font-size adapts to the screen size to ensure readability. Paragraphs have a bottom margin to match a vertical rhythm.</p>
+          <p>Paragraphs also have a maximum width of about 700px, so that long lines don't become too difficult to read.</p>
+        </div>
+        <div class="component">
+          <h3 id="header">Headers</h3>
+          <p>Headers use a lighter font-weight. They should be used in cascading order to denote the importance of a section's contents.</p><h1>h1. This is a very large header</h1><h2>h2. This is a large header</h2><h3>h3. This is a medium header</h3><h4>h4. This is a moderate header</h4><h5>h5. This is a small header</h5><h6>h6. This is a tiny header</h6>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="bold-header">Bold Headers</h3>
+          <p>Sometimes a bolder header might be required for more emphasis. This can be done by adding the <code>.heavy</code> class. If this option is used it should be done consistently throughout the application or website.</p>
+          <p>By inserting a <code>small</code> element into a header Foundation will scale the header font size down for an inline element, allowing you to use this for subtitles or other secondary header text.</p><h1 class="heavy">h1. This is a very large header</h1><h2 class="heavy">h2. This is a large header</h2><h3 class="heavy">h3. This is a medium heade</h3><h4 class="heavy">h4. This is a moderate header</h4><h5 class="heavy">h5. This is a small header</h5><h6 class="heavy">h6. This is a tiny header</h6>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="sub-header">Sub Headers</h3>
+          <p>By inserting a <code>small</code> element into a header Foundation will scale the header font size down for an inline element, allowing you to use this for subtitles or other secondary header text.</p><h4>This is a medium header <small>with a subheader</small></h4>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="link">Links</h3>
+          <p>Text links should be intuitive, so that users know they can click or tap on them. Inline links are <a href="#">displayed in red</a> with an underline on hover</p>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="list">Lists</h3>
+          <p>Lists are useful for a collection of text items and can be numbered or nested too.</p><p>This is what an un-ordered list looks like:</p><ul><li>A list item</li><li>Another list item</li><li>Another one</li><li>Ok, last one</li></ul><p>A list following a paragraph has reduced spacing, so that a paragraph can give context to a list:</p><ol><li>A list item</li><li>Another list item</li><li>Another one</li><li>Ok, last one</li></ol>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="definition-list">Definition Lists</h3>
+          <p>A definition list <code>&lt;dl&gt;</code> is used to display name-value pairs, like FAQs. Each term <code>&lt;dt&gt;</code> is paired with one or more definitions <code>&lt;dd&gt;</code>.</p><dl><dt>A Definition Term</dt><dd>The definition, styled just like a paragraph, but with clever spacing between definitions.</dd><dt>Why should I use this style guide?</dt><dd>Because it looks good</dd></dl>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="blockquote">Blockquote</h3>
+          <p>Sometimes other people say nice things, and we may want to mention those things with a quote that clearly shows who said it. Use a <code>&lt;cite&gt;</code> tag for the byline.</p><blockquote>I had a really good experience using this product.<cite>A. Customer</cite></blockquote>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="divider">Dividers</h3>
+          <p>Use <code>&lt;hr&gt;</code> dividers to define thematic breaks between paragraphs or other page elements</p>
+        </div>
+        <hr>
+        <div class="component">
+          <h2 id="form">Forms</h2>
+          <p>Forms are key in interacting with users and gleaning information from them. Forms must be intuitive and accessible to stop users getting frustrated and leaving before finishing.</p>
+        </div>
+        <div class="component">
+          <h3 id="input">Text Inputs</h3>
+          <p>These input types create a single line text field: <code>text</code>, <code>date</code>, <code>datetime</code>, <code>datetime-local</code>, <code>email</code>, <code>month</code>, <code>number</code>, <code>password</code>, <code>search</code>, <code>tel</code>, <code>time</code>, <code>url</code>, and <code>week</code></p>
+          <p>Using specific input types for different data formats can help improve usability. For example, using a <code>tel</code> input will open a numpad keyboard on mobile devices, making it easier for the user to input a phone number.</p>
+          <p>All form inputs should have a clear label, that describes what you want the user to enter. Clicking a label should focus on the form field. This is achieved by linking label elements to input elements with a <code>for</code> attribute.</p>
+          <p>Although popular in modern websites, inline placeholders should not be used because they disappear as soon as a user starts typing, and the user may think there is already text input. Instead an example or hint should be placed beneath the input.</p><div><label for="example-text">An example text field</label><input type="text" id="example-text" name="example-text"/><span>A helper or example for this field</span></div><span class="button show-code" data-open-component="input">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="input">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="textarea">Text Area</h3>
+          <p>Text areas are used for multi-line text input, for example on a comments form. A text area can also be given a helper label. The text area should be given an appropriate amount of rows (with the <code>rows</code> attribute) for the text that is expected to be entered.</p><div><label for="example-textarea">Example Text Area</label><span>Some helper text</span><textarea id="example-textarea" name="example-textarea" rows="3"></textarea></div><span class="button show-code" data-open-component="textarea">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="textarea">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="select">Select Menu</h3>
+          <p>Use select menus to combine many choices into one dropdown menu. This is useful for saving space, small screen devices have native UI patterns for dealing with these</p><div><label for="my-input">My Input</label><span>More helpful advice for this field</span><select id="my-input" name="my-input"><option value="1">An Option</option><option value="2" selected="selected">Another Option</option><option value="3">A Third Option</option></select><span>Some helpful advice for this field</span></div><span class="button show-code" data-open-component="select">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="select">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="checkbox">Checkboxes</h3>
+          <p>Use groups of checkboxes when the user may select multiple choices from a list</p><div><legend for="example-checkbox">Example Checkbox Group</legend><span>Some helper text</span><fieldset><div><input type="checkbox" id="example-checkbox-1" value="1" name="example-checkbox"/><label for="example-checkbox-1">An Option</label></div><div><input type="checkbox" id="example-checkbox-2" value="2" name="example-checkbox" checked="checked"/><label for="example-checkbox-2">Another Option</label></div><div><input type="checkbox" id="example-checkbox-3" value="3" name="example-checkbox"/><label for="example-checkbox-3">A Third Option</label></div></fieldset></div><span class="button show-code" data-open-component="checkbox">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="checkbox">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="radio">Radio Buttons</h3>
+          <p>Use radio buttons when the user must select just one choice</p><div role="radiogroup"><legend for="my-radios">My Radio options</legend><span>More helpful advice for this field</span><fieldset><div><input type="radio" id="my-radios-1" value="1" name="my-radios"/><label for="my-radios-1">An Option</label></div><div><input type="radio" id="my-radios-2" value="2" name="my-radios"/><label for="my-radios-2">Another Option</label></div><div><input type="radio" id="my-radios-3" value="3" name="my-radios"/><label for="my-radios-3">A Third Option</label></div></fieldset><span>Some helpful advice for this field</span></div><span class="button show-code" data-open-component="radio">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="radio">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="upload">File Upload</h3>
+          <p>File upload inputs are inconsistent across all browsers, so we use a label mask to display it like a button. When clicked it opens up the user's file browser</p><div><label for="example-file-upload">Upload your file</label><input type="file" id="example-file-upload" name="example-file-upload" tabindex="-1"/><label for="example-file-upload" tabindex="0">Upload</label></div><span class="button show-code" data-open-component="upload">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="upload">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="datepicker">Date Picker</h3>
+          <p>Inputs with an attribute of <code>data-datepicker</code> can be made more user friendly with the jQuery-ui datepicker widget. The datepicker input element is one case where a placeholder is useful, to indicate that the input must be clicked to open the calendar.</p><div><label for="Example Date Picker"></label><input type="date" id="Example Date Picker" name="example-date-picker" data-datepicker="data-datepicker" placeholder="Pick Date"/></div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="errors">Form Errors</h3>
+          <p>User input needs to be validated to check for erroneous or malicious data. To improve usability, human-friendly error messages should be shown on invalid fields.</p>
+          <p>In-line validation (inline feedback as the user is filling out the form) is much more effective than post-submission feedback.</p>
+          <p>Error messages can be added to the DOM by javascript or into the source html server-side. A wrapper with class <code>.has-error</code> around an input and label denotes an error. A span with class <code>.error-message</code> should show the specific error.</p><div class="has-error"><label for="example-text-error">Text field with an error</label><input type="text" id="example-text-error" name="example-text-error" value="Some erroneous text"/><span>Helper text</span><span class="error-message">This field is too long</span></div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="callout">Error Callout</h3>
+          <p>A callout should be included at the top of the form to indicate that there are errors after form submission. It should indicate which fields have errors to help the user amend them</p><div class="callout"><h5>There were some problems with your form</h5><p><a href="#example-text-error">Example Field</a> - Must be less than 30 characters</p><p><a href="#example-text-error">Another Field</a> - Must be a specific type of data</p></div><span class="button show-code" data-open-component="callout">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="callout">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="required">Required Fields</h3>
+          <p>In some applications different input fields will be required or optional. For best usability, optional fields should be marked as optional (in the helper text), and required fields should be the default.</p>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="disabled">Disabled Fields</h3>
+          <p>Some applications will need to show a field but not accept user input, or disable the submit button until all required fields are completed. The <code>disabled</code> attribute stops input and styles it to makes it clear that inputs can not be modified by the user.</p><div><label for="example-text-disabled">An example disabled text field</label><input type="text" id="example-text-disabled" name="example-text-disabled" value="User cannot edit this text" disabled="disabled"/><span>You cannot edit this field</span></div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="button">Buttons</h3>
+          <p>Buttons are for users to trigger an actions, the text on the button should make it clear what the action will do. The colour of the button can also denote whether an action is constructive, destructive etc.</p>
+          <p>Buttons in a row are spaced apart so that a user won't press the wrong one by mistake.</p>
+          <p>Links or submit inputs can be styled as buttons with the <code>.button</code> class.</p>
+          <p><h4>Create new order?</h4></p>
+          <p><a class="button small secondary" href="#">Cancel</a> <a class="button" href="#">Create order</a></p>
+          <p>Button labels should be clear so that the user knows what action will happen when they click it. Constructive actions (Yes, Confirm, Save etc) should go on the right and be blue. Destructive actions (Delete etc) should be red. Back-tracking actions (Cancel, Undo, No) should be grey and on the left, and could be smaller.</p>
+          <p>Colour of buttons can be modified by adding a <code>.alert</code> or <code>.secondary</code> class. The size of buttons can be modified with <code>.small</code>, <code>.tiny</code>, <code>.large</code> and <code>.expanded</code> classes.</p><div><a class="button" href="#">Basic Button</a><a class="alert button" href="#">Alert Btn</a><a class="secondary button" href="#">Secondary Btn</a></div><div><a class="secondary small button" href="#">A Small Btn</a><a class="tiny button alert" href="#">An even smaller button</a><a class="large button" href="#">A large button</a></div><div><a class="small expanded button" href="#">An expanded button</a></div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="submit">Submit Button</h3>
+          <p>A mixin for inputs with a type of <code>hidden</code> has been included</p><input class="button" type="submit" value="Submit"/><br/><span class="button show-code" data-open-component="submit">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="submit">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="hidden">Hidden Inputs</h3>
+          <p>A mixin for inputs with a type of <code>hidden</code> has been included</p><!-- No demo--><span class="button show-code" data-open-component="hidden">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="hidden">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h2 id="ui-elements">Custom UI Elements</h2>
+        </div>
+        <div class="component">
+          <h3 id="layout">Layout</h3><div class="content"><p>There are 3 main layout components: Full-width, two-thirds and one-third. This <code>.content</code> column is two-thirds.</p><p>A <code>.full</code> element stretches across the width of the screen.</p><p>On small screens all three if of these components are full-width and stack on top of each other</p><h4>Helper layout classes</h4><p><code>.half</code>, <code>.third</code>, <code>.quarter</code> and <code>.sixth</code> are available for quick column width setting.</p><h4>Custom column layouts</h4><p>Columns should be implemented using Foundation's sass mixins - <a href="http://foundation.zurb.com/sites/docs/grid.html#building-semantically" target="_blank">see more details here</a>. There is also a useful grid-columns mixin in `scss/_mixins.scss`, see the documentation on that for more info</p></div><div class="sidebar"><h3>Sidebar</h3><p>This <code>.sidebar</code> element is one third width.</p></div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="table">Tables</h3>
+          <p>Tables are used for showing tabular data. A few simple style tweaks make tables much easier to read. Adding a class of <code>.hover</code> makes rows highlight on hover.</p>
+          <p>Adding a class of <code>.stack</code> to a table makes it stack up on small screens for a cleaner layout.</p><table class="stack hover"><thead><tr><th width="200">Table Header</th><th>Another Table Header</th><th>Table Header</th><th>Table Header</th></tr></thead><tbody><tr><td>Content Goes Here</td><td>This is longer content Donec id elit non mi porta gravida at eget metus.</td><td>Content Goes Here</td><td><a class="button small" href="">A Button</a></td></tr><tr><td>Content Goes Here</td><td>This is longer Content Donec id elit non mi porta gravida at eget metus.</td><td></td><td>Content Goes Here</td></tr><tr><td>Content Goes Here</td><td>This is longer Content Donec id elit non mi porta gravida at eget metus.</td><td>Content Goes Here</td><td>Content Goes Here</td></tr></tbody></table>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="top-menu">Main Menu</h3>
+          <p>On applications with multi-level navigation, breadcrumbs can be used to indicate which section the user is in, and help them navigate back up navigation.</p>
+          <div class="breakout"><menu role="banner"><div class="wrap"><a class="logo-link" href="#" title="Home" tabindex="-1">Home</a><a class="menu-link" href="#">Menu<span class="menu-icon"></span></a><ul role="navigation"><li><a href="#" tabindex="0">Home</a></li><li class="has-dropdown"><a href="#" tabindex="0">A dropdown Menu</a><ul role="menu"><li><a href="#" role="menuitem">Menu Item 1</a></li><li><a href="#" role="menuitem">Menu Item 2</a></li><li><a href="#" role="menuitem">Menu Item 3</a></li></ul></li><li class="has-dropdown active"><a href="#" tabindex="0">Active dropdown Menu</a><ul role="menu"><li><a href="#" role="menuitem">Menu Item 1</a></li><li class="active"><a href="#" role="menuitem">Menu Item 2</a></li><li><a href="#" role="menuitem">Menu Item 3</a></li></ul></li><li class="has-dropdown"><a href="#" tabindex="0">A dropdown Menu</a><ul role="menu"><li><a href="#" role="menuitem">Menu Item 1</a></li><li><a href="#" role="menuitem">Menu Item 2</a></li><li><a href="#" role="menuitem">Menu Item 3</a></li></ul></li></ul></div></menu>
+          </div><span class="button show-code" data-open-component="top-menu">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="top-menu">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="hero">Hero Image</h3>
+          <p>A hero image can sit beneath the menu and spans the full width of the screen.</p>
+          <p>Using a class of <code>.slim</code> squeezes the image to take up less vertical space. This is more appropriate for non-home pages.</p>
+          <p>Using a class of <code>.outline</code> adds an oval cutout overlay to the image. Be sure to test any images on all screen sizes to make sure important focal points are not cropped</p>
+          <div class="breakout"><div class="hero"><img src="https://unsplash.it/1200/400/?random" alt="A hero image"/></div>
+          </div><span class="button show-code" data-open-component="hero">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="hero">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="alert">Alert Message</h3>
+          <p>Alert messages can be displayed above or below the menu &amp; hero for urgent messages to catch the user's attention.</p>
+          <p>Alert messages can be made dismissable by adding a <code>.close</code> span.</p>
+          <div class="breakout"><section class="message alert" role="status"><p>We’re recruiting! <a href="#">Click here</a> to discover our fantastic career opportunities and start your journey today</p></section>
+          </div><span class="button show-code" data-open-component="alert">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="alert">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="sub-menu">Sub-menu</h3>
+          <p>The submenu component can be used to help users navigate between pages or screens within the current section.</p>
+          <p>Active menu items (the page the user is currently on) should be given the <code>.active</code> class to highlight them</p>
+          <div class="breakout"><nav class="sub-menu"><ul><li><a href="#">Menu Item 1</a></li><li class="active"><a href="#">Active Menu Item</a></li><li><a href="#">Menu Item 3</a></li></ul></nav>
+          </div><span class="button show-code" data-open-component="sub-menu">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="sub-menu">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="quick-links">Quick Links</h3>
+          <p>An eye-catching navigation with big icons can be used for directing users to the most common pages and actions of a website or application.</p>
+          <p>The links on the menu should be consistent throughout the application to help users learn the pattern.</p>
+          <div class="breakout"><nav class="quick"><ul><li class="tablet"><a href="#">Products</a></li><li class="van"><a href="#">Services</a></li><li class="map"><a href="#">Reviews</a></li><li class="box"><a href="#">Case Studies</a></li><li class="laptop"><a href="#">Login</a></li></ul></nav><main><div class="content"><h4>Varying number of links</h4><p>The default amount of links in the quick link bar should be 5. If you need to have 4 or 6 link the classes <code>.four</code> and <code>.six</code> should be used to neatly arrange the spacing.</p><h4>Icons</h4><p>Icons are added to links with a class, the 5 icons shown here are using <code>.tablet</code>, <code>.van</code>, <code>.map</code>, <code>.box</code> and <code>.laptop</code>. To add new icons you will need to define the <code>background-image: url()</code> with your own class</p></div><div class="sidebar no-bottom-pad"><h4>Vertical quick links</h4><p>Quick links can be displayed vertically (for use in sidebars etc) by adding the <code>.vertical</code> class. On small devices, vertical quick links are dispayed the same as horizontal.</p><nav class="quick vertical "><ul><li class="tablet"><a href="#">Products</a></li><li class="van"><a href="#">Services</a></li><li class="map"><a href="#">Reviews</a></li><li class="box"><a href="#">Case Studies</a></li><li class="laptop"><a href="#">Login</a></li></ul></nav></div></main>
+          </div><span class="button show-code" data-open-component="quick-links">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="quick-links">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="card">Floating Card</h3>
+          <p>Floating cards can be useful for displaying single or repeating modules on a page, such as tweets or news stories. Cards fill the horizontal space they are in and stretch vertically to contain the content.</p>
+          <p>Cards can contain a <code>&lt;time&gt;</code> or a <code>&lt;span class=&quot;meta&quot;&gt;</code> element, a header, paragraphs and link. If the card has a link, the header and time should also be linked.</p>
+          <p>Cards with a class of <code>.flat</code> will have a grey background. Cards with a class of <code>.shadow</code> will have a shadow effect.</p><div class="nest"><div class="sidebar"><article class="card"><span class="meta"></span><span class="meta"><a href="#" tabindex="-1">12th December 16</a></span><h4><a href="#">News Item Title</a></h4><p>Don't forget, you can stay updated with all our latest news by visiting our website!</p><a href="#">Read more...</a></article></div><div class="sidebar"><article class="card flat"><span class="meta"></span><span class="meta"><a href="#" tabindex="-1">Job Title</a></span><h4><a href="#">Class 1 Driver</a></h4><p>We are currently looking to recruit a driver to join the existing well established team.</p><a href="#">Apply now...</a></article></div><div class="sidebar"><article class="card shadow"><span class="meta"></span><span class="meta"><a href="#" tabindex="-1">12th December 16</a></span><h4><a href="#">News Item Title</a></h4><p>Don't forget, you can stay updated with all our latest news by visiting our website!</p><a href="#">Read more...</a></article></div></div><span class="button show-code" data-open-component="card">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="card">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="breadcrumbs">Breadcrumbs</h3>
+          <p>On applications with multi-level navigation, breadcrumbs can be used to indicate which section the user is in, and help them navigate back up navigation.</p><ul class="breadcrumbs"><li><a href="#">Home</a></li><li><a href="#">Category</a></li><li><a href="#">Sub-Category</a></li><li>Current</li></ul><span class="button show-code" data-open-component="breadcrumbs">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="breadcrumbs">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="pagination">Pagination</h3>
+          <p>When there is too much content for one page, we should make it easy for users to browse, skim or skip between pages. On small screens only the next and previous buttons are shown.</p><div><ul class="pagination" role="navigation" aria-label="Pagination"><li class="pagination-previous"><a href="#10">Previous <span class="show-for-sr">page</span></a></li><li><a href="#" aria-label="Page 1">1</a></li><li><a href="#10" aria-label="Page 2">2</a></li><li class="current"><span class="show-for-sr">You're on page</span> 3</li><li><a href="#30" aria-label="Page 4">4</a></li><li class="ellipsis" aria-hidden="true"></li><li><a href="#120" aria-label="Page 13">13</a></li><li><a href="#130" aria-label="Page 14">14</a></li><li class="pagination-next"><a href="#30">Next <span class="show-for-sr">page</span></a></li></ul></div><span class="button show-code" data-open-component="pagination">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="pagination">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="tab">Tabs</h3>
+          <p>To save on-screen space we can use tabbed content to alternate between views within the same context, whilst staying on the same page.</p><div class="tabs"><ul role="tablist"><li><a role="tab" href="#tab-1" tabindex="0" data-tab="1">Tab 1</a></li><li class="active"><a role="tab" href="#tab-2" tabindex="0" data-tab="2">Tab 2</a></li><li><a role="tab" href="#tab-3" tabindex="0" data-tab="3">Tab 3</a></li><li><a role="tab" href="#tab-4" tabindex="0" data-tab="4">Tab 4</a></li></ul><div class="panel" role="tabpanel" id="tab-1" data-tab="1"><h2>This is tab 1</h2><p>Some tab content</p></div><div class="panel active" role="tabpanel" id="tab-2" data-tab="2"><h2>This is tab 2</h2><p>Some tab content</p></div><div class="panel" role="tabpanel" id="tab-3" data-tab="3"><h2>This is tab 3</h2><p>Some tab content</p></div><div class="panel" role="tabpanel" id="tab-4" data-tab="4"><h2>This is tab 4</h2><p>Some tab content</p></div></div><span class="button show-code" data-open-component="tab">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="tab">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="progress">Progress Bar</h3>
+          <p>A progress bar can be used to give an indication to users of how far through their wait they are. The <code>&lt;progress&gt;</code> element is used and the progress is set with the <code>value</code> and <code>max</code> attributes. The percentage can be shown in-line by adding the <code>.show-percent</code> class.</p><progress value="30" max="100"></progress><progress class="show-percent" value="80" max="100"></progress><progress class="show-percent" value="55" max="100"></progress>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="login">Login Screen</h3>
+          <p>The login screen can be used inline (within another page) or floated alone on a full page.</p>
+          <p>Users should be allowed to log in with their email address. If this is not technically possible, a link to instructions on how to find their username/user id etc should be provided underneath the relevant field.</p>
+          <p>No mixin / sample code is provided for this element because there are too many variables. Check the <code>docs.pug</code> source code for this example.</p>
+          <div class="breakout"><div class="login-page"><form class="login" action="#" method="post"><h1>Login to My App</h1><div><label for="email">Your email address:</label><input type="email" id="email" name="email"/></div><div><label for="password">Password:</label><input type="text" id="password" name="password"/><span><a href="#">Forgotten your password?</a></span></div><div><a class="login-go" href="#">Login</a></div><div class="login-signup"><p>Don't have an account? <a href="#">Sign Up</a></p></div></form></div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="closeable">Closeable Elements</h3>
+          <p>Sometimes elements need to be closeable by the user. The helper class <code>.closeable</code> can be combined with a <code>&lt;span class=&quot;close&quot;&gt;Close&lt;/span&gt;</code> element to add a close button to any element. The styles for this are an attempt at <em>one-size fits all</em> so they may need to be tweaked for each use case.</p><div class="nest"><div class="sidebar"><article class="card flat closeable"><span class="meta"></span><span class="meta"><a href="#" tabindex="-1">12th December 16</a></span><h4><a href="#">News Item Title</a></h4><span class="close">Close</span><p>Don't forget, you can stay updated with all our latest news by visiting our website!</p><a href="#">Read more...</a></article></div></div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="banner">Banner Message</h3>
+          <p>Banner callouts can be useful for displaying a quick eye-catching message. A logo can be included with the <code>.logo</code> class or the text can be centred with a <code>.center</code> class.</p>
+          <div class="breakout"><section class="banner logo "><div><h2>A fancy strapline</h2><h3>Call us on 0800 00 00 00</h3></div></section>
+          </div><span class="button show-code" data-open-component="banner">Show Code and Live Preview</span>
+          <div class="code" data-pug="data-pug" data-component="banner">
+            <div class="pug">
+              <h4>Pug Mixin</h4>
+              <p class="mixin-call"></p>
+              <h5>Parameters</h5>
+              <form action="#"></form>
+              <div class="blockField">
+                <h5>Block content</h5>
+              </div>
+            </div>
+            <div class="html">
+              <h5>Mixin Call</h5><code class="mixin block typescript"></code>
+              <h5>HTML Output</h5><code class="output block xml"></code>
+            </div>
+            <div class="result">
+              <h5>Live Preview</h5>
+              <div class="stage"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="component">
+          <h3 id="footer">Footer</h3>
+          <p>The footer sits at the bottom of the screen and can contain 3 horizontal sections. It can be used for re-iterating navigation or adding extra information and links.</p>
+          <p>No mixin / sample code is provided for this element because there are too many variables. Check the <code>docs.pug</code> source code for this example.</p>
+          <div class="breakout"><footer><div class="top"><div class="contain"><aside><h2>Style Guider - Generate style guides</h2><p>It's really good!</p><ul><li>Call on: 0800 00 00 00 <sup>*</sup></li><li>Email: <a href="">mail@style-guider-demo.com</a></li><li><small>* Calls may be recorded</small></li></ul></aside><nav><h4>Some Navigation</h4><ul><li><a href="#">History</a></li><li><a href="#">Team</a></li><li><a href="#">Awards</a></li><li><a href="#">Corporate Social Responsibility</a></li><li><a href="#">Careers</a></li></ul></nav><nav><h4>More Navigation</h4><ul><li><a href="#">History</a></li><li><a href="#">Team</a></li><li><a href="#">Awards</a></li><li><a href="#">Corporate Social Responsibility</a></li><li><a href="#">Careers</a></li></ul></nav><nav><h4>More Navigation</h4><ul><li><a href="#">History</a></li><li><a href="#">Team</a></li><li><a href="#">Awards</a></li><li><a href="#">Corporate Social Responsibility</a></li><li><a href="#">Careers</a></li></ul></nav><nav><h4>More Navigation</h4><ul><li><a href="#">History</a></li><li><a href="#">Team</a></li><li><a href="#">Awards</a></li><li><a href="#">Corporate Social Responsibility</a></li><li><a href="#">Careers</a></li></ul></nav></div></div><div class="middle"><div class="contain"><span class="copyright">© 2017 Ian Egner</span><nav><ul><li><a href="#">A text link</a></li><li><a href="#">A text link</a></li><li><a href="#">A text link</a></li><li><a href="#">A text link</a></li><li><a href="#">A text link</a></li></ul></nav></div></div><div class="bottom"><p>Some Company Name, Some Address, Some Town, Some County, Some Postcode</p><p>Registered in England and Wales No. Some Company Number - VAT Registration No. Some VAT number</p></div></footer>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="docs/js/jquery.js"></script>
+    <script src="docs/js/jquery-ui.js"></script>
+    <script src="docs/js/scripts.js?=56cu6rd"></script>
+    <script src="docs/js/pug.js"></script>
+    <script src="docs/js/highlight.min.js"></script>
+    <script src="docs/js/docs.js"></script>
+  </body>
+</html>
