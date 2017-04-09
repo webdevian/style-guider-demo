@@ -1,4 +1,6 @@
 # Style Guider Demo
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/webdevian/style-guider-demo.svg)](https://greenkeeper.io/)
 [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Code Climate][codeclimate-image]][codeclimate-url]
 > [View the demo](https://webdevian.github.io/style-guider-demo/)
 
