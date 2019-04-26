@@ -18,7 +18,7 @@
     "gulp-webserver": "^0.9.1",
     "husky": "^0.14.0",
     "pug-lint": "^2.3.0",
-    "sass-lint": "^1.10.2",
+    "sass-lint": "^1.13.1",
     "standard": "^11.0.0"
   },
   "dependencies": {
