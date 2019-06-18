@@ -33,7 +33,7 @@
     "gulp-sass-error": "^1.0.4",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
-    "pug": "^2.0.0-beta6"
+    "pug": "^2.0.4"
   },
   "scripts": {
     "build": "gulp build",
