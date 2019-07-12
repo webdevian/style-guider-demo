@@ -19,7 +19,7 @@
     "husky": "^0.14.0",
     "pug-lint": "^2.3.0",
     "sass-lint": "^1.10.2",
-    "standard": "^11.0.0"
+    "standard": "^13.0.2"
   },
   "dependencies": {
     "foundation-sites": "^6.3.1",
