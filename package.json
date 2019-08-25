@@ -14,7 +14,7 @@
   "devDependencies": {
     "gulp-pug-linter": "^0.5.1",
     "gulp-sass-lint": "^1.3.2",
-    "gulp-standard": "^12.0.0",
+    "gulp-standard": "^14.0.0",
     "gulp-webserver": "^0.9.1",
     "husky": "^0.14.0",
     "pug-lint": "^2.3.0",
