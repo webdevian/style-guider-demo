@@ -16,7 +16,7 @@
     "gulp-sass-lint": "^1.3.2",
     "gulp-standard": "^12.0.0",
     "gulp-webserver": "^0.9.1",
-    "husky": "^0.14.0",
+    "husky": "^3.0.6",
     "pug-lint": "^2.3.0",
     "sass-lint": "^1.10.2",
     "standard": "^11.0.0"
