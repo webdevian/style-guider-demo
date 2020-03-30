@@ -22,7 +22,7 @@
     "standard": "^11.0.0"
   },
   "dependencies": {
-    "foundation-sites": "^6.3.1",
+    "foundation-sites": "^6.6.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-concat": "^2.6.1",
